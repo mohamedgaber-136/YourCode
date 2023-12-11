@@ -1,0 +1,24 @@
+.headerParent .headerChild{ 
+    display: flex;
+    width: 965px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;    
+}
+.headerParent{
+    margin-top: 100px;
+}
+.buttonsWithoutBorderRight{
+    border-radius:15px 0 0 15px !important ;
+}
+.buttonsWithoutBorderLeft{
+    border-radius:0px 15px 15px 0px !important ;
+}
+@media (max-width:320px){
+.head .headerChild{
+    width: 357px;
+}
+.headerChild h2,.headerChild h5,.headerChild h6{
+    font-size: 16px !important;
+}
+}

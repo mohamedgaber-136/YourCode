@@ -1,0 +1,43 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "./Subnav.css";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper/modules";
+function SubNavBar() {
+  let CourseSplite = [
+    "Html5",
+    "CSS3",
+    "BS5",
+    "JQUERY",
+    "JavaScript",
+    "EcmaScript6",
+    "ReactJs",
+    "OOP",
+    "Dart",
+    "flutter",
+  ];
+  return (
+    <>
+      <Swiper
+        slidesPerView={6}
+        spaceBetween={0}
+        freeMode={true}
+        modules={[FreeMode]}
+        className="mySwiper"
+      >
+        {CourseSplite.map((item,ind) => (
+          <SwiperSlide className=" text-light" key={ind}>{item}</SwiperSlide>
+        ))}
+      </Swiper>
+     
+    </>
+  );
+}
+
+export default SubNavBar;
