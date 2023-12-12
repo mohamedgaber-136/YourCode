@@ -1,0 +1,23 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-color: black !important;
+}
+
+.swiper-slide {
+    position: relative !important;
+    z-index: -1  !important;
+      background-color: black !important;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width:320px){
+    .swiper-slide{
+      font-size: 11px;
+    }
+  }
+ 
+  

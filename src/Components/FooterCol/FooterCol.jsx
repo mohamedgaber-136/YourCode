@@ -24,7 +24,7 @@ const FooterCol = ({ title, list }) => {
       {title == "Social Profiles" ? (
         <ul className="list-unstyled d-inline-flex gap-2">
           {list.map((ele) => (
-            <li className="bg-light px-2 py-1 rounded-1">
+            <li className="bg-light p-2 rounded-1">
               <a href="#!" className="text-dark text-decoration-none">
                 {ele}
               </a>

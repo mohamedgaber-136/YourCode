@@ -26,7 +26,7 @@ export const FooterBar = () => {
     { title: "AboutUs", list: ["Company", "Achievements", "Our Goals"] },
     {
       title: "Social Profiles",
-      list: [<FaFacebook />, <FaTwitter />, <FaLinkedin />],
+      list: [<FaFacebook size={24} />, <FaTwitter size={24} />, <FaLinkedin size={24} />],
     },
   ];
 
@@ -36,7 +36,6 @@ export const FooterBar = () => {
   //   <FaLocationDot color="grey" />,
   // ];
 
-  const socialList = [];
 
   //   const footerInfo = {
   //     logo: ["hello@yourCode.com", "+20 91813 23 2309", "Somewhere in the World"],
