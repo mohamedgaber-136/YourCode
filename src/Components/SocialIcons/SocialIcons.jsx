@@ -1,23 +1,31 @@
 import React from "react";
-import "./SocialIcons.css";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import styles from "./SocialIcons.module.css";
 
 export const SocialIcons = () => {
   return (
-    <div class="social-links">
-      <div id="twitter" class="social-btn flex-center">
+    // <div className="social-links">
+    <div className={styles.socialLinks}>
+      {/* <div className="social-btn flex-center twitter"> */}
+      <div
+        className={`${styles.twitter} ${styles.socialBtn} ${styles.flexCenter}`}
+      >
         <FaTwitter size={24} />
 
         <span>@twitter</span>
       </div>
 
-      <div id="linkedin" class="social-btn flex-center">
+      <div
+        className={`${styles.linkedin} ${styles.socialBtn} ${styles.flexCenter}`}
+      >
         <FaLinkedin size={24} />
         <span>@linkedin</span>
       </div>
 
-      <div id="github" class="social-btn flex-center">
+      <div
+        className={`${styles.github} ${styles.socialBtn} ${styles.flexCenter}`}
+      >
         <FaGithub size={24} />
 
         <span>@github</span>

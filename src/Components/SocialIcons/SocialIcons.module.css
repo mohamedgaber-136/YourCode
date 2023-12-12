@@ -1,11 +1,11 @@
-.social-links,
-.flex-center {
+.socialLinks,
+.flexCenter {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.social-btn {
+.socialBtn {
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -19,12 +19,12 @@
   justify-content: center;
 }
 
-.social-btn svg {
+.socialBtn svg {
   height: 24px;
   width: 24px;
 }
 
-.social-btn span {
+.socialBtn span {
   width: 0px;
   overflow: hidden;
   transition: 0.3s;
@@ -32,31 +32,54 @@
   margin-left: 5px;
 }
 
-.social-btn:hover {
+.socialBtn:hover {
   width: 150px;
   border-radius: 5px;
+  padding: 5px;
 }
 
-.social-btn:hover span {
+.socialBtn:hover span {
   padding: 2px;
   width: 80px;
 }
 
-#twitter svg {
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.linkedin:hover {
+  background-color: #0e76a8;
+}
+
+.github:hover {
+  background-color: #333;
+}
+
+.twitter svg {
   fill: #1da1f2;
 }
 
-#linkedin svg {
+.linkedin svg {
   fill: #0e76a8;
 }
 
-#github {
+.github svg {
   fill: #333;
 }
 
+.github:hover svg,
+.twitter:hover svg,
+.linkedin:hover svg,
+.github span,
+.linkedin span,
+.twitter span {
+  fill: white;
+  color: white !important;
+}
+
 @media (max-width: 769px) {
-  .social-links,
-  .flex-center {
+  .socialLinks,
+  .flexCenter {
     justify-content: center !important;
   }
 }
