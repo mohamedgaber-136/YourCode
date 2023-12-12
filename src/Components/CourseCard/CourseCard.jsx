@@ -10,8 +10,8 @@ const CourseCard = ({ course }) => {
       >
         <img src={course.image} width={"100%"} className="rounded-3" />
 
-        <div className="d-flex flex-wrap flex-sm-row flex-column justify-content-between align-items-center ">
-          <div className="d-flex gap-1 w-lg-50">
+        <div className="d-flex   flex-sm-row flex-column justify-content-between align-items-center ">
+          <div className="d-flex gap-1 w-lg-50  -">
             {[1, 2].map((item) => (
               <span className={`${styles.lightText} px-1 border rounded-2`}>
                 {item == 1 ? course.duration : course.level}
@@ -23,9 +23,8 @@ const CourseCard = ({ course }) => {
 
         <div className="pt-1">
           <h4 className={styles.titleText}>{course.title}</h4>
-          <p className="lead fs-6 ">{course.description}</p>
+          <p className={`  m-0 ${styles.coursePara}` }>{course.description}</p>
         </div>
-
         <button className="btn btn-light p-2">Get It Now</button>
       </div>
     </Col>
