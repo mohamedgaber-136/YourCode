@@ -73,7 +73,7 @@ const OurCoursesSection = () => {
   ];
 
   return (
-    <Container className="bg-light d-flex flex-column justify-content-center align-items-center">
+    <Container className="mainSpacer bg-light d-flex flex-column justify-content-center align-items-center">
       <SectionLabel
         title={"Our Courses"}
         description={
