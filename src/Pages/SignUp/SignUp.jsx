@@ -2,7 +2,7 @@ import React from "react";
 import "./SignIn.css";
 import { Inputs } from "../../Components/Inputs/Inputs";
 import Img from "./Leonardo_Diffusion_XL_software_Thinking_2.jpg";
-export const SignIn = () => {
+export const SignUp = () => {
   const InputsDataNames = [
     { type: "text", span: "FirstName" },
     { type: "text", span: "LastName" },

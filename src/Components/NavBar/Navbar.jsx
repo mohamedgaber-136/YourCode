@@ -52,9 +52,9 @@ const NavbarComp = () => {
               <Nav.Link>Tracks</Nav.Link>
             </div>
             <div className=" justify-content-center gap-3 d-flex ">
-              <LoginButton text={"SignUp"} color={"#750E21"} NavigDestination={'/SignIn'} />
-              <LoginButton text={"LOGIN"} />
-              <LoginButton text={"Test"} color={"#F4F27E"} fontColor={'black'} />
+              <LoginButton text={"SignUp"} color={"#750E21"} NavigDestination={'/SignUp'} />
+              <LoginButton text={"LOGIN"} NavigDestination={'/Login'} />
+              <LoginButton text={"Test"} color={"#F4F27E"} fontColor={'black'}  />
               
             </div>
           </Nav>

@@ -7,11 +7,12 @@ import global_en from "./translations/en/global.json";
 import global_ar from "./translations/ar/global.json";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
-import { BrowserRouter,Routes, Route } from "react-router-dom";
-import { SignIn } from "./Pages/SignIn/SignIn.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SignUp } from "./Pages/SignUp/SignUp.jsx";
 import NavbarComp from "./Components/NavBar/Navbar.jsx";
 import SubNavBar from "./Components/SubNavBar/SubNavBar.jsx";
 import { FooterBar } from "./Components/FooterBar/FooterBar.jsx";
+import { Login } from "./Pages/Login/Login.jsx";
 i18next.init({
   interpolation: { escapeValue: false },
   lng: "en",
@@ -26,14 +27,15 @@ i18next.init({
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <I18nextProvider i18n={i18next}>
-    <BrowserRouter >
-      <NavbarComp/>
-      <SubNavBar/>
+    <BrowserRouter>
+      <NavbarComp />
+      <SubNavBar />
       <Routes>
-        <Route path="/" element={ <App />}/>
-        <Route path="/SignIn" element={ <SignIn />}/>
+        <Route path="/" element={<App />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
-      <FooterBar/>
+      <FooterBar />
     </BrowserRouter>
   </I18nextProvider>
 );
