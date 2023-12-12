@@ -49,7 +49,7 @@ export const BenefitsSection = () => {
     },
   ];
   return (
-    <Container className="bg-light d-flex flex-column justify-content-center align-items-center">
+    <Container className="mainSpacer bg-light d-flex flex-column justify-content-center align-items-center">
       <SectionLabel
         title={"Benefits"}
         description={
