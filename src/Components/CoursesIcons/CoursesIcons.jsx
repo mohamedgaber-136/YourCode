@@ -4,7 +4,7 @@ import "./courseicons.css";
 import video from "./Untitled design.mp4";
 export const CoursesIcons = () => {
   return (
-    <div className=" mt-3 d-flex justify-content-center align-items-center flex-column">
+    <div className="  coursesIconsGrand d-flex justify-content-center align-items-center flex-column">
       <div className="w-75 coursesIconsParent py-3 rounded-pill mb-5">
         <div className="d-flex gap-5 justify-content-center courseIcons ">
         

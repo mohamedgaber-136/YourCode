@@ -5,8 +5,10 @@
     align-items: center;
     gap: 6px;    
 }
+
 .headerParent{
-    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .buttonsWithoutBorderRight{
     border-radius:15px 0 0 15px !important ;

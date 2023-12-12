@@ -1,11 +1,11 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import logo from "../../assets/Logo.png";
+import logo from "../NavBar/Leonardo_Diffusion_XL_logo_YourCodesoftwaremind_0-removebg.png";
 import { SiGmail } from "react-icons/si";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
-
+import './Footer.css'
 const FooterCol = ({ title, list }) => {
   const icons = [
     <SiGmail color="grey" />,
@@ -14,9 +14,9 @@ const FooterCol = ({ title, list }) => {
   ];
 
   return (
-    <Col lg="3" md="6" className="mb-4">
+    <Col lg="3" md="6" className="mb-4 footerLogo  d-flex flex-column">
       {title == "logo" ? (
-        <img className="pt-2 pb-2" src={logo} />
+        <img className="py-2  align-self-center" src={logo} />
       ) : (
         <h5 className="text-uppercase">{title}</h5>
       )}

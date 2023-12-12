@@ -6,6 +6,9 @@
 .coursesIconsParent{
     background-color: #ebeae6 !important;
 }
+.coursesIconsGrand{
+    margin: 0p 150px !important;
+}
 .videoParent{
     width: 75%;
     border-radius: 10px;

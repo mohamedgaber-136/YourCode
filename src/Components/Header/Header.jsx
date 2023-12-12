@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 export const Header = () => {
   return (
-    <div className=" container d-flex justify-content-center align-items-center headerParent ">
+    <header className=" container d-flex justify-content-center align-items-center headerParent ">
       <div className="headerChild">
         <div className="d-flex justify-content-center align-items-center gap-3 ">
         <i className="fa-solid fa-bolt  bg-dark p-2 rounded-circle"></i>
@@ -16,6 +16,6 @@ export const Header = () => {
         </div>
       </div>
       
-    </div>
+    </header>
   );
 };

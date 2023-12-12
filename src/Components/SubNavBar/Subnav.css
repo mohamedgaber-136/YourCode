@@ -6,7 +6,7 @@
 .subNavParent{
   position: sticky;
   z-index: 1;
-  top: 56px;
+  top: 76px;
 }
 .swiper-slide {
     position: relative !important;

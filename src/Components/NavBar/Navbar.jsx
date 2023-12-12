@@ -1,13 +1,13 @@
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import SubNavBar from "../SubNavBar/SubNavBar";
 import "./Navbar.css";
 import { LoginButton } from "../Buttons/Login/LoginButton";
-
+import Logo from './Leonardo_Diffusion_XL_logo_YourCodesoftwaremind_0-removebg.png'
+import {useNavigate} from 'react-router-dom'
 const NavbarComp = () => {
+  let navigate = useNavigate()
   let [changeBar, setChangeBar] = useState(true);
   const [t, i18n] = useTranslation("global");
   const [checkLang, setLang] = useState(true);
@@ -19,10 +19,9 @@ const NavbarComp = () => {
     i18n.changeLanguage(lang);
   };
   const changeBarFunc = () => {
-   setChangeBar(!changeBar)
-   console.log(changeBar)
+    setChangeBar(!changeBar);
+    console.log(changeBar);
   };
-  // let { t, handleLang, checkLang } = useContext(langContext);
   return (
     <div className="   d-flex justify-content-center glassBackGroung fixed-top">
       <Navbar
@@ -36,23 +35,27 @@ const NavbarComp = () => {
         >
           {checkLang ? "ar" : "en"}
         </button>
-        <Navbar.Brand>{t("Navbar.Logo")}</Navbar.Brand>
+        <Navbar.Brand>
+          <img src={Logo} alt="YourCodeLogo" />
+        </Navbar.Brand>
 
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={changeBarFunc}
-           style={changeBar?{}:{ transform: "rotate(90deg)" }}   
+          style={changeBar ? {} : { transform: "rotate(90deg)" }}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="gap-5">
             <div className="d-flex  justify-content-center gap-5">
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link onClick={()=>navigate('/')} >Home</Nav.Link>
               <Nav.Link>InterView</Nav.Link>
               <Nav.Link>Tracks</Nav.Link>
             </div>
             <div className=" justify-content-center gap-3 d-flex ">
-              <LoginButton text={"SignUp"} color={"#750E21"} />
+              <LoginButton text={"SignUp"} color={"#750E21"} NavigDestination={'/SignIn'} />
               <LoginButton text={"LOGIN"} />
+              <LoginButton text={"Test"} color={"#F4F27E"} fontColor={'black'} />
+              
             </div>
           </Nav>
         </Navbar.Collapse>
