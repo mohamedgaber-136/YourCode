@@ -18,7 +18,7 @@ const FooterCol = ({ title, list }) => {
       {title == "logo" ? (
         <img className="py-2  align-self-center" src={logo} />
       ) : (
-        <h5 className="text-uppercase">{title}</h5>
+        <h5 className="text-uppercase fw-bold">{title}</h5>
       )}
 
       {title == "Social Profiles" ? (
