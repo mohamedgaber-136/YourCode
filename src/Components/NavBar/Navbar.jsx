@@ -45,7 +45,7 @@ const NavbarComp = () => {
           style={changeBar ? {} : { transform: "rotate(90deg)" }}
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="gap-5">
+          <Nav className="gap-lg-5 gap-2">
             <div className="d-flex  justify-content-center gap-5">
               <Nav.Link onClick={()=>navigate('/')} >Home</Nav.Link>
               <Nav.Link>InterView</Nav.Link>
