@@ -23,7 +23,7 @@ function SubNavBar() {
     "flutter",
   ];
   return (
-    <>
+    <div className="subNavParent">
       <Swiper
         slidesPerView={6}
         spaceBetween={0}
@@ -36,7 +36,7 @@ function SubNavBar() {
         ))}
       </Swiper>
      
-    </>
+    </div>
   );
 }
 

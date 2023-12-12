@@ -1,5 +1,5 @@
 .courseIcons img {
-    width: 35px;
+    width: 100%;
     height: 35px;
     object-fit: cover;
 }
