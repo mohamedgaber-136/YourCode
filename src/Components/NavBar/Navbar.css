@@ -15,3 +15,12 @@ backdrop-filter: blur(8.4px);
 .dropdown-menu {
     z-index: 100 !important;
 }
+.navbar-toggler {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+.navbar-toggler-icon{
+    position: relative;
+    transition: 0.2s;
+}

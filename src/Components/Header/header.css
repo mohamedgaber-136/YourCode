@@ -10,6 +10,7 @@
 }
 .buttonsWithoutBorderRight{
     border-radius:15px 0 0 15px !important ;
+    background-color:  #90B8F8 !important;
 }
 .buttonsWithoutBorderLeft{
     border-radius:0px 15px 15px 0px !important ;
@@ -21,4 +22,7 @@
 .headerChild h2,.headerChild h5,.headerChild h6{
     font-size: 16px !important;
 }
+}
+.textUnlock,.fa-bolt{
+    color: #90B8F8;
 }

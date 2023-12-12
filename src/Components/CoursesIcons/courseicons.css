@@ -3,3 +3,29 @@
     height: 35px;
     object-fit: cover;
 }
+.coursesIconsParent{
+    background-color: #ebeae6 !important;
+}
+.videoParent{
+    width: 75%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.videoParent video{
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.fa-circle-play{
+    position: absolute;
+    font-size: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

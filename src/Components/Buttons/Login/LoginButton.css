@@ -1,0 +1,20 @@
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: #5F85DB
+  }
+  
+  .button:active {
+    transform: translateY(0.5em);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
