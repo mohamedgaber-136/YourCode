@@ -6,6 +6,7 @@ import { Header } from "./Components/Header/Header";
 import SubNavBar from "./Components/SubNavBar/SubNavBar";
 import { BenefitsSection } from "./Components/Benefits/BenefitsSection";
 import { SignIn } from "./Pages/SignIn/SignIn";
+import { AskedQuestionsSection } from "./Components/AskedQuestions/AskedQuestionsSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CoursesIcons />
       <BenefitsSection />
       <OurCoursesSection />
+      <AskedQuestionsSection/>
     </div>
   );
 }
