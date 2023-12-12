@@ -1,0 +1,22 @@
+.accordion-button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordion-body {
+  font-size: 15px;
+}
+
+.accordion-button::after {
+  background-image: url(../../assets/addIcon.svg);
+  background-position: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #90b8f8;
+  box-shadow: none !important;
+}
