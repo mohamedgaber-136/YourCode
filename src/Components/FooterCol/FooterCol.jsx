@@ -26,7 +26,7 @@ const FooterCol = ({ title, list }) => {
       ) : (
         <ul className="list-unstyled ">
           {list.map((ele, index) => (
-            <li className="fw-medium">
+            <li>
               {title == "logo" && <span className="pe-2">{icons[index]}</span>}
               <a href="#!" className="text-dark text-decoration-none">
                 {ele}
