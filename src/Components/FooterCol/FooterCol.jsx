@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
-import './Footer.css'
+import "./Footer.css";
 const FooterCol = ({ title, list }) => {
   const icons = [
     <SiGmail color="grey" />,
