@@ -1,0 +1,10 @@
+.modal-dialog{
+    max-width: 100%;
+   
+}
+.modal-backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

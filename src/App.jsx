@@ -5,6 +5,7 @@ import { BenefitsSection } from "./Components/Benefits/BenefitsSection";
 import { AskedQuestionsSection } from "./Components/AskedQuestions/AskedQuestionsSection";
 import { useContext } from "react";
 import { GlobalContext } from "./Context/GlobalContext";
+import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
 
 function App() {
   const { lang } = useContext(GlobalContext);
@@ -17,6 +18,7 @@ function App() {
       <BenefitsSection />
       <OurCoursesSection />
       <AskedQuestionsSection />
+      <ModalForSignIn/>
     </div>
   );
 }
