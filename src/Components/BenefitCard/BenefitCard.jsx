@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Col from "react-bootstrap/Col";
 import styles from "./BenefitCard.module.css";
 import { IoArrowRedoOutline } from "react-icons/io5";
-import Aos from 'aos'
+import Aos from "aos";
 export const BenefitCard = ({ item, index }) => {
-  useEffect(()=>{
-    Aos.init()
-  },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Col lg="4" md="6" className="p-2">
       <div
@@ -19,7 +19,6 @@ export const BenefitCard = ({ item, index }) => {
           <h5 className="fw-bold">{item.title}</h5>
           <p className="lead fs-6 m-0">{item.description} </p>
         </div>
-    
       </div>
     </Col>
   );

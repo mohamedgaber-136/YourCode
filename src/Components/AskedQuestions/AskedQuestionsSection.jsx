@@ -63,8 +63,8 @@ export const AskedQuestionsSection = () => {
     },
   ];
   return (
-    <div className=" container-fluid bg-dark">
-      <Container className="py-4 mainSpacer rounded-2">
+    <div className=" container-fluid bg-LightDark">
+      <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">
         <Row>
           <Col lg="4" className="text-light">
             <h3>Frequently Asked Questions</h3>

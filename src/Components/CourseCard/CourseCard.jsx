@@ -2,7 +2,6 @@ import styles from "./CourseCard.module.css";
 import Col from "react-bootstrap/Col";
 
 const CourseCard = ({ course }) => {
-  console.log(course, "props");
   return (
     <Col lg="4" md="6" className="p-2">
       <div
