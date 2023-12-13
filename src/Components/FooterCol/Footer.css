@@ -3,3 +3,9 @@ width: 100px;
 height: 100px;
 object-fit: cover;
 }
+.footerTitle{
+    font-size: 16px;
+}
+.footerTitleList{
+    font-size: 11px;
+}

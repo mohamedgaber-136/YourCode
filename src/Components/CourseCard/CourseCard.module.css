@@ -36,6 +36,9 @@
     font-size: 11px;
   }
 }
+.coursePara{
+  font-size: 13px;
+}
 
 /* @media (max-width: 992px) {
   .boldText {

@@ -18,7 +18,7 @@ const FooterCol = ({ title, list }) => {
       {title == "logo" ? (
         <img className="py-2  align-self-center" src={logo} />
       ) : (
-        <h5 className="text-uppercase fw-bold">{title}</h5>
+        <h6 className=" footerTitle">{title}</h6>
       )}
 
       {title == "Social Profiles" ? (
@@ -28,7 +28,7 @@ const FooterCol = ({ title, list }) => {
           {list.map((ele, index) => (
             <li>
               {title == "logo" && <span className="pe-2">{icons[index]}</span>}
-              <a href="#!" className="text-dark text-decoration-none">
+              <a href="#!" className="text-dark footerTitleList text-decoration-none">
                 {ele}
               </a>
             </li>

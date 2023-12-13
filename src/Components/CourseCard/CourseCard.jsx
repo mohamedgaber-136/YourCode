@@ -1,10 +1,15 @@
+import { useEffect } from "react";
 import styles from "./CourseCard.module.css";
 import Col from "react-bootstrap/Col";
+import Aos, { init } from "aos";
+import 'aos/dist/aos.css'
 
 const CourseCard = ({ course }) => {
-  console.log(course, "props");
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <Col lg="4" md="6" className="p-2">
+    <Col lg="4" md="6" className="p-2" data-aos="zoom-in">
       <div
         className={`${styles.card} bg-body p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm text-sm-start text-center`}
       >
@@ -23,7 +28,7 @@ const CourseCard = ({ course }) => {
 
         <div className="pt-1">
           <h4 className={styles.titleText}>{course.title}</h4>
-          <p className={`  m-0 ${styles.coursePara}` }>{course.description}</p>
+          <p className={`  m-0 ${styles.coursePara}`}>{course.description}</p>
         </div>
         <button className="btn btn-light p-2">Get It Now</button>
       </div>

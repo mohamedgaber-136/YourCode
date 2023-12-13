@@ -13,7 +13,7 @@ export const Login = () => {
     },
   ];
   return (
-    <div className="d-flex justify-content-center align-items-center SignParent">
+    <div className="d-flex justify-content-center align-items-center LoginParent">
       <div className="d-flex justify-content-center SignIn flex-column flex-md-row  ">
         <div className=" signImgParent">
           <img src={Img} alt="signInImage" />
