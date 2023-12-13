@@ -21,7 +21,7 @@
 }
 
 .card {
-  height: 520px;
+  height: 510px;
 }
 
 @media (max-width: 420px) {
@@ -40,8 +40,3 @@
   font-size: 13px;
 }
 
-/* @media (max-width: 992px) {
-  .boldText {
-    width: 100%;
-  }
-} */

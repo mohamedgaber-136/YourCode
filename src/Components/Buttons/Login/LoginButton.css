@@ -6,6 +6,9 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-size: 12px;
+    width: 80px;
+    height: 35px !important;
+    border-radius: 10px;
   }
   
   .button:hover {

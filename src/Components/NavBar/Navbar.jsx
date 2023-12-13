@@ -25,7 +25,7 @@ const NavbarComp = () => {
   return (
     <div className="   d-flex justify-content-center glassBackGroung fixed-top">
       <Navbar
-        expand="lg"
+        expand="md"
         className="bg-transpernt w-50  d-flex justify-content-center    "
         dir={checkLang ? "ltr" : "rtl"}
       >
@@ -51,7 +51,7 @@ const NavbarComp = () => {
               <Nav.Link>InterView</Nav.Link>
               <Nav.Link>Tracks</Nav.Link>
             </div>
-            <div className=" justify-content-center gap-3 d-flex ">
+            <div className=" justify-content-center align-items-center gap-3 d-flex ">
               <LoginButton text={"SignUp"} color={"#750E21"} NavigDestination={'/SignUp'} />
               <LoginButton text={"LOGIN"} NavigDestination={'/Login'} />
               <LoginButton text={"Test"} color={"#F4F27E"} fontColor={'black'}  />

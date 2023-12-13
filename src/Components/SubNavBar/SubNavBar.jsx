@@ -32,7 +32,7 @@ function SubNavBar() {
         className="mySwiper"
       >
         {CourseSplite.map((item,ind) => (
-          <SwiperSlide className=" text-light" key={ind}>{item}</SwiperSlide>
+          <SwiperSlide className=" text-light SubNavItem" key={ind}>{item}</SwiperSlide>
         ))}
       </Swiper>
      

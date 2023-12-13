@@ -9,9 +9,9 @@ const CourseCard = ({ course }) => {
     Aos.init();
   }, []);
   return (
-    <Col lg="4" md="6" className="p-2" data-aos="zoom-in">
+    <Col lg="4" md="6" className="p-2 shadow-lg rounded-2 cardContainer" data-aos="zoom-in">
       <div
-        className={`${styles.card} bg-body p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm text-sm-start text-center`}
+        className={`${styles.card} bg-white p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm text-sm-start text-center`}
       >
         <img src={course.image} width={"100%"} className="rounded-3" />
 

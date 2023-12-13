@@ -17,7 +17,6 @@ function App() {
       <BenefitsSection />
       <OurCoursesSection />
       <AskedQuestionsSection />
-      <h2 className="fw-bolder text-bg-danger">{lang}</h2>
     </div>
   );
 }

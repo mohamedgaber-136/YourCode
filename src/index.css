@@ -10,5 +10,11 @@
 }
 .benefitPara{
   font-size: 12px !important;
-  padding: 60px;
+ 
+}
+.CheckNavBar{
+  height: 100px;
+}
+.cardContainer{
+  gap: 10px !important;
 }

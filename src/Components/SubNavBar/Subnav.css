@@ -4,9 +4,9 @@
     background-color: black !important;
 }
 .subNavParent{
-  position: sticky;
+  position: sticky !important;
   z-index: 1;
-  top: 76px;
+  top: 76px !important;
 }
 .swiper-slide {
     position: relative !important;
@@ -23,5 +23,12 @@
       font-size: 2.5vw;
     }
   }
- 
+ .SubNavItem{
+  transition: 0.2s;
+ }
   
+.SubNavItem:hover{
+  background-color:  #90B8F8 !important;
+color: black !important;
+cursor: pointer;
+}

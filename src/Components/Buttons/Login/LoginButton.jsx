@@ -7,7 +7,7 @@ export const LoginButton = ({ text, color, fontColor, NavigDestination }) => {
 
   return (
     <button
-      className="button rounded-pill"
+      className="button "
       style={{ backgroundColor: color, color: fontColor }}
       onClick={() => {
         navigator( NavigDestination );

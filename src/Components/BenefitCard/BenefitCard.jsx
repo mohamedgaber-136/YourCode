@@ -3,13 +3,13 @@ import Col from "react-bootstrap/Col";
 import styles from "./BenefitCard.module.css";
 import { IoArrowRedoOutline } from "react-icons/io5";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 export const BenefitCard = ({ item, index }) => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <Col lg="4" md="6" className="p-3 s" data-aos='fade-down'>
+    <Col lg="4" md="6" className="p-3 s" data-aos="fade-down">
       <div
         className={`${styles.card} bg-white px-4 rounded-2 gap-3 d-flex flex-column justify-content-center align-items-start shadow-sm `}
       >
