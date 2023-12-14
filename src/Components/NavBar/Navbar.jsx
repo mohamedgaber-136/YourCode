@@ -47,7 +47,7 @@ const NavbarComp = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="gap-lg-5 gap-2">
             <div className="d-flex  justify-content-center gap-5">
-              <Nav.Link onClick={()=>navigate('/')} >Home</Nav.Link>
+              <Nav.Link onClick={()=>navigate('/')} >{t('Navbar.home')}</Nav.Link>
               <Nav.Link>InterView</Nav.Link>
               <Nav.Link>Tracks</Nav.Link>
             </div>
