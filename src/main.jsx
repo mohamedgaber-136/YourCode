@@ -28,8 +28,8 @@ i18next.init({
   },
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <GlobalContextProvider>
-    <I18nextProvider i18n={i18next}>
+  <I18nextProvider i18n={i18next}>
+    <GlobalContextProvider>
       <BrowserRouter>
         <CheckNavBar>
           <NavbarComp />
@@ -42,6 +42,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Routes>
         <FooterBar />
       </BrowserRouter>
-    </I18nextProvider>
-  </GlobalContextProvider>
+    </GlobalContextProvider>
+  </I18nextProvider>
 );

@@ -1,23 +1,27 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Navbar.css";
 import { LoginButton } from "../Buttons/Login/LoginButton";
-import Logo from './Leonardo_Diffusion_XL_logo_YourCodesoftwaremind_0-removebg.png'
-import {useNavigate} from 'react-router-dom'
+import Logo from "./Leonardo_Diffusion_XL_logo_YourCodesoftwaremind_0-removebg.png";
+import { useNavigate } from "react-router-dom";
+import { GlobalContext } from "./../../Context/GlobalContext";
 const NavbarComp = () => {
-  let navigate = useNavigate()
+  const { checkLang, handleLang, trans } = useContext(GlobalContext);
+  let navigate = useNavigate();
   let [changeBar, setChangeBar] = useState(true);
-  const [t, i18n] = useTranslation("global");
-  const [checkLang, setLang] = useState(true);
-  const handleLang = (lang) => {
-    setLang(false);
-    if (!checkLang) {
-      setLang(true);
-    }
-    i18n.changeLanguage(lang);
-  };
+
+  // const [t, i18n] = useTranslation("global");
+  // const [checkLang, setLang] = useState(true);
+  // const handleLang = (lang) => {
+  //   setLang(false);
+  //   if (!checkLang) {
+  //     setLang(true);
+  //   }
+  //   i18n.changeLanguage(lang);
+  // };
+
   const changeBarFunc = () => {
     setChangeBar(!changeBar);
     console.log(changeBar);
@@ -47,15 +51,27 @@ const NavbarComp = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="gap-lg-5 gap-2">
             <div className="d-flex  justify-content-center gap-5">
-              <Nav.Link onClick={()=>navigate('/')} >{t('Navbar.home')}</Nav.Link>
-              <Nav.Link>InterView</Nav.Link>
-              <Nav.Link>Tracks</Nav.Link>
+              <Nav.Link onClick={() => navigate("/")}>
+                {trans("Navbar.Home")}
+              </Nav.Link>
+              <Nav.Link>{trans("Navbar.Interview")}</Nav.Link>
+              <Nav.Link>{trans("Navbar.Tracks")}</Nav.Link>
             </div>
             <div className=" justify-content-center align-items-center gap-3 d-flex ">
-              <LoginButton text={"SignUp"} color={"#750E21"} NavigDestination={'/SignUp'} />
-              <LoginButton text={"LOGIN"} NavigDestination={'/Login'} />
-              <LoginButton text={"Test"} color={"#F4F27E"} fontColor={'black'}  />
-              
+              <LoginButton
+                text={trans("Navbar.SignUp")}
+                color={"#750E21"}
+                NavigDestination={"/SignUp"}
+              />
+              <LoginButton
+                text={trans("Navbar.LOGIN")}
+                NavigDestination={"/Login"}
+              />
+              <LoginButton
+                text={trans("Navbar.Test")}
+                color={"#F4F27E"}
+                fontColor={"black"}
+              />
             </div>
           </Nav>
         </Navbar.Collapse>
