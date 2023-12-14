@@ -1,12 +1,9 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "./Subnav.css";
-
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 function SubNavBar() {
@@ -23,7 +20,7 @@ function SubNavBar() {
     "flutter",
   ];
   return (
-    <div className="subNavParent">
+    <div className='subNavParent'>
       <Swiper
         slidesPerView={6}
         spaceBetween={0}
@@ -31,11 +28,12 @@ function SubNavBar() {
         modules={[FreeMode]}
         className="mySwiper"
       >
-        {CourseSplite.map((item,ind) => (
-          <SwiperSlide className=" text-light SubNavItem" key={ind}>{item}</SwiperSlide>
+        {CourseSplite.map((item, ind) => (
+          <SwiperSlide className=" text-light SubNavItem" key={ind}>
+            {item}
+          </SwiperSlide>
         ))}
       </Swiper>
-     
     </div>
   );
 }

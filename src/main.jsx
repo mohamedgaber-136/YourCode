@@ -15,6 +15,8 @@ import { FooterBar } from "./Components/FooterBar/FooterBar.jsx";
 import { Login } from "./Pages/Login/Login.jsx";
 import GlobalContextProvider from "./Context/GlobalContext.jsx";
 import { CheckNavBar } from "./Components/CheckNavBar/CheckNavBar.jsx";
+import { MainProfile } from "./Pages/Profile/MainProfile/MainProfile.jsx";
+import { CheckFooter } from "./Components/CheckFooter/CheckFooter.jsx";
 i18next.init({
   interpolation: { escapeValue: false },
   lng: "en",
@@ -39,8 +41,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/MainProfile" element={<MainProfile />} />
         </Routes>
-        <FooterBar />
+        <CheckFooter>
+          <FooterBar />
+        </CheckFooter>
       </BrowserRouter>
     </GlobalContextProvider>
   </I18nextProvider>

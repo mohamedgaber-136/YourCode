@@ -11,7 +11,7 @@ export const SocialIcons = () => {
       <div
         className={`${styles.twitter} ${styles.socialBtn} ${styles.flexCenter}`}
       >
-        <FaTwitter size={24} />
+        <FaTwitter size={14} />
 
         <span>@twitter</span>
       </div>
@@ -19,14 +19,14 @@ export const SocialIcons = () => {
       <div
         className={`${styles.linkedin} ${styles.socialBtn} ${styles.flexCenter}`}
       >
-        <FaLinkedin size={24} />
+        <FaLinkedin size={14} />
         <span>@linkedin</span>
       </div>
 
       <div
         className={`${styles.github} ${styles.socialBtn} ${styles.flexCenter}`}
       >
-        <FaGithub size={24} />
+        <FaGithub size={14} />
 
         <span>@github</span>
       </div>
