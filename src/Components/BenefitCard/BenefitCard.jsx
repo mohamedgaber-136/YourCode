@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Col from "react-bootstrap/Col";
 import styles from "./BenefitCard.module.css";
 import { IoArrowRedoOutline } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { GlobalContext } from "../../Context/GlobalContext";
 export const BenefitCard = ({ item, index }) => {
+  const { toIndiaDigits } = useContext(GlobalContext);
   useEffect(() => {
     Aos.init();
   }, []);
@@ -15,6 +17,9 @@ export const BenefitCard = ({ item, index }) => {
       >
         <h2 className="align-self-end NumberTitle fs-1">
           {index.toString().length == 1 ? `0${index}` : `${index}`}
+          {/* {index.toString().length == 1
+            ? toIndiaDigits(`0${index}`)
+            : toIndiaDigits(`${index}`)} */}
         </h2>
         <div className="d-flex flex-column gap-1">
           <h5 className="fw-bold">{item.title}</h5>

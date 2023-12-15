@@ -15,44 +15,158 @@
     "price": "عرض الاسعار",
     "explore": "استكشاف الدورات"
   },
-  "Benefits": {
+  "benefits": {
     "title": "الفوائد",
-    "descrip": "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.",
+    "descrip": "غالبًا ما يساعد العثور على الأخطاء والتفكير المنطقي الأشخاص على تطوير العمل الجماعي ومهارات التعامل مع الآخرين نظرًا لأن مشاريع البرامج والتطبيقات غالبًا ما تكون متعددة التخصصات وتعاونية.",
     "list": [
       {
-        "title": "Flexible Learning Schedule",
-        "description": "Fit your coursework around your existing commitments and obligations."
+        "title": "جدول التعلم المرن",
+        "description": "تناسب الدورات الدراسية الخاصة بك حول التزاماتك والتزاماتك الحالية."
       },
       {
-        "title": "Expert Instruction",
-        "description": "Learn from industry experts who have hands-on experience in design and development."
-      },
-
-      {
-        "title": "Diverse Course Offerings",
-        "description": "Explore a wide range of design and development courses covering various topics."
-      },
-      {
-        "title": "Updated Curriculum",
-        "description": "Access courses with up-to-date content reflecting the latest trends and industry practices."
-      },
-      {
-        "title": "Practical Projects and Assignments",
-        "description": "Develop a portfolio showcasing your skills and abilities to potential employers."
-      },
-      {
-        "title": "Interactive Learning Environment",
-        "description": "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding."
+        "title": "تعليمات الخبراء",
+        "description": "تعلم من خبراء الصناعة الذين لديهم خبرة عملية في التصميم والتطوير."
       },
 
       {
-        "title": "Flexible Learning Schedule",
-        "description": "Fit your coursework around your existing commitments and obligations."
+        "title": "عروض الدورات المتنوعة",
+        "description": "استكشف مجموعة واسعة من دورات التصميم والتطوير التي تغطي موضوعات مختلفة."
       },
       {
-        "title": "Expert Instruction",
-        "description": "Learn from industry experts who have hands-on experience in design and development."
+        "title": "المنهج المحدث",
+        "description": "يمكنك الوصول إلى الدورات التدريبية ذات المحتوى الحديث الذي يعكس أحدث الاتجاهات وممارسات الصناعة."
+      },
+      {
+        "title": "المشاريع والواجبات العملية",
+        "description": "قم بتطوير محفظة تعرض مهاراتك وقدراتك لأصحاب العمل المحتملين."
+      },
+      {
+        "title": "بيئة التعلم التفاعلية",
+        "description": "تعاون مع زملائك المتعلمين، وتبادل الأفكار والتعليقات لتعزيز فهمك."
+      },
+
+      {
+        "title": "جدول التعلم المرن",
+        "description": "تناسب الدورات الدراسية الخاصة بك حول التزاماتك والتزاماتك الحالية."
+      },
+      {
+        "title": "تعليمات الخبراء",
+        "description": "تعلم من خبراء الصناعة الذين لديهم خبرة عملية في التصميم والتطوير."
       }
     ]
+  },
+  "courses": {
+    "title": "دوراتنا",
+    "descrip": "تطوير التطبيقات البرمجية، والعمل مع أنظمة التشغيل المختلفة، وإنشاء قواعد البيانات، واستكشاف الأخطاء وإصلاحها والمزيد. سواء كنت تهدف إلى العمل لدى جوجل أو في شركة ناشئة، فإن دورة برمجة الكمبيوتر ستوفر لك نقطة الانطلاق اللازمة.",
+    "list": [
+      {
+        "id": "01",
+        "title": "أساسيات تصميم الويب",
+        "image": "../../assets/CourseImage.png",
+        "level": "مبتدئ",
+        "duration": "4 أسابيع",
+        "instructor": "بواسطة جون سميث",
+        "description": "تعلم أساسيات تصميم الويب، بما في ذلك HTML وCSS ومبادئ التصميم سريع الاستجابة. تطوير المهارات اللازمة لإنشاء مواقع ويب جذابة بصريًا وسهلة الاستخدام."
+      },
+      {
+        "id": "02",
+        "title": "تصميم واجهة المستخدم",
+        "image": "../../assets/CourseImage_2.png",
+        "level": "متوسط",
+        "duration": "6 أسابيع",
+        "instructor": "بواسطة إميلي جونسون",
+        "description": "أتقن فن إنشاء واجهات مستخدم بديهية (UI) وتعزيز تجارب المستخدم (UX). تعلم مبادئ التصميم والإطارات الشبكية والنماذج الأولية وتقنيات اختبار قابلية الاستخدام."
+      },
+      {
+        "id": "03",
+        "title": "تطوير تطبيقات الهاتف المحمول",
+        "image": "../../assets/CourseImage_3.png",
+        "level": "متوسط",
+        "duration": "8 أسابيع",
+        "instructor": "بواسطة ديفيد براون",
+        "description": "انغمس في عالم تطوير تطبيقات الهاتف المحمول. تعلم كيفية إنشاء تطبيقات iOS وAndroid أصلية باستخدام أطر عمل رائدة في الصناعة مثل Swift وKotlin."
+      },
+
+      {
+        "id": "04",
+        "title": "التصميم الجرافيكي للمبتدئين",
+        "image": "../../assets/CourseImage_4.png",
+        "level": "مبتدئ",
+        "duration": "10 أسابيع",
+        "instructor": "بواسطة سارة طومسون",
+        "description": "اكتشف أساسيات التصميم الجرافيكي، بما في ذلك الطباعة ونظرية الألوان وتصميم التخطيط وتقنيات معالجة الصور. قم بإنشاء تصميمات مذهلة بصريًا للوسائط المطبوعة والرقمية."
+      },
+      {
+        "id": "05",
+        "title": "تطوير الويب للواجهة الأمامية",
+        "image": "../../assets/CourseImage_5.png",
+        "level": "متوسط",
+        "duration": "10 أسابيع",
+        "instructor": "بواسطة مايكل ادامز",
+        "description": "كن بارعًا في تطوير الويب الأمامي. تعلم HTML وCSS وJavaScript وأطر العمل الشائعة مثل Bootstrap وReact. بناء مواقع تفاعلية وسريعة الاستجابة."
+      },
+      {
+        "id": "06",
+        "title": "جافا سكريبت المتقدمة",
+        "image": "../../assets/CourseImage_6.png",
+        "level": "متقدم",
+        "duration": "6 أسابيع",
+        "instructor": "بواسطة جينيفر ويلسون",
+        "description": "خذ مهاراتك في JavaScript إلى المستوى التالي. استكشف المفاهيم المتقدمة مثل عمليات الإغلاق والنماذج الأولية والبرمجة غير المتزامنة وميزات ES6. أنشئ تطبيقات معقدة بثقة."
+      }
+    ],
+    "button": "احصل عليه الآن"
+  },
+  "askedQue": {
+    "title": "أسئلة شائعة",
+    "descrip": "لا يزال لديك أي أسئلة؟ اتصل بفريقنا عبر support@skillbridge.com",
+    "button": "اطلع على جميع الأسئلة",
+    "list": [
+      {
+        "question": "هل يمكنني التسجيل في عدة دورات في وقت واحد؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "ما نوع الدعم الذي يمكن أن أتوقعه من المدربين؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+
+      {
+        "question": "هل الدورات ذاتية التعلم أم أن لها تواريخ بدء وانتهاء محددة؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "هل هناك أي شروط مسبقة للدورات؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "هل يمكنني تنزيل مواد الدورة للوصول إليها دون الاتصال بالإنترنت؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "هل يمكنني التسجيل في عدة دورات في وقت واحد؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "ما نوع الدعم الذي يمكن أن أتوقعه من المدربين؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+
+      {
+        "question": "هل الدورات ذاتية التعلم أم أن لها تواريخ بدء وانتهاء محددة؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "هل هناك أي شروط مسبقة للدورات؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      },
+      {
+        "question": "هل يمكنني تنزيل مواد الدورة للوصول إليها دون الاتصال بالإنترنت؟",
+        "answer": "قطعاً! يمكنك التسجيل في دورات متعددة في وقت واحد والوصول إليها في الوقت الذي يناسبك."
+      }
+    ]
+  },
+  "label": {
+    "button": "عرض المزيد"
   }
 }

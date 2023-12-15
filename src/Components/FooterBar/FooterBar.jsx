@@ -38,8 +38,12 @@ export const FooterBar = () => {
     <footer className="bg-body text-dark text-center text-md-start ">
       <Container className="p-4 py-5">
         <Row>
-          {footerInfo.map((item) => (
-            <FooterCol title={item.title} list={item.list} />
+          {footerInfo.map((item, index) => (
+            <FooterCol
+              key={`col-${index}`}
+              title={item.title}
+              list={item.list}
+            />
           ))}
         </Row>
       </Container>

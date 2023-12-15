@@ -15,9 +15,9 @@
     "price": "View Pricing",
     "explore": "Explore Courses"
   },
-  "Benefits": {
+  "benefits": {
     "title": "Benefits",
-    "descrip": "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.",
+    "descrip": "Finding errors and thinking logically often helps people develop teamwork and interpersonal skills since software and application projects are often cross-disciplinary and collaborative.",
     "list": [
       {
         "title": "Flexible Learning Schedule",
@@ -54,5 +54,119 @@
         "description": "Learn from industry experts who have hands-on experience in design and development."
       }
     ]
+  },
+  "courses": {
+    "title": "Our Courses",
+    "descrip": "Developing software applications, working with different operating systems, database creation, troubleshooting and more.  Whether you have your sights set on working for Google or a start-up, a computer programming course will provide the stepping stones needed. ",
+    "list": [
+      {
+        "id": "01",
+        "title": "Web Design Fundamentals",
+        "image": "../../assets/CourseImage.png",
+        "level": "Beginner",
+        "duration": "4 Weeeks",
+        "instructor": "By John Smith",
+        "description": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites."
+      },
+      {
+        "id": "02",
+        "title": "UI/UX Design",
+        "image": "../../assets/CourseImage_2.png",
+        "level": "Intermediate",
+        "duration": "6 Weeks",
+        "instructor": "By Emily Johnson",
+        "description": "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques."
+      },
+      {
+        "id": "03",
+        "title": "Mobile App Development",
+        "image": "../../assets/CourseImage_3.png",
+        "level": "Intermediate",
+        "duration": "8 Weeks",
+        "instructor": "By David Brown",
+        "description": "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin."
+      },
+
+      {
+        "id": "04",
+        "title": "Graphic Design for Beginners",
+        "image": "../../assets/CourseImage_4.png",
+        "level": "Beginner",
+        "duration": "10 Weeks",
+        "instructor": "By Sarah Thompson",
+        "description": "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media."
+      },
+      {
+        "id": "05",
+        "title": "Front-End Web Development",
+        "image": "../../assets/CourseImage_5.png",
+        "level": "Intermediate",
+        "duration": "10 Weeks",
+        "instructor": "By Michael Adams",
+        "description": "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites."
+      },
+      {
+        "id": "06",
+        "title": "Advanced JavaScript",
+        "image": "../../assets/CourseImage_6.png",
+        "level": "Advance",
+        "duration": "6 Weeks",
+        "instructor": "By Jennifer Wilson",
+        "description": "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence."
+      }
+    ],
+    "button": "Get It Now"
+  },
+  "askedQue": {
+    "title": "Frequently Asked Questions",
+    "descrip": "Still you have any questions? Contact our Team via support@skillbridge.com",
+    "button": "See All FAQ’s",
+    "list": [
+      {
+        "question": "Can I enroll in multiple courses at once?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "What kind of support can I expect from instructors?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+
+      {
+        "question": "Are the courses self-paced or do they have specific start and end dates?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "Are there any prerequisites for the courses?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "Can I download the course materials for offline access?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "Can I enroll in multiple courses at once?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "What kind of support can I expect from instructors?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+
+      {
+        "question": "Are the courses self-paced or do they have specific start and end dates?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "Are there any prerequisites for the courses?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      },
+      {
+        "question": "Can I download the course materials for offline access?",
+        "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience."
+      }
+    ]
+  },
+  "label": {
+    "button": "View More"
   }
 }

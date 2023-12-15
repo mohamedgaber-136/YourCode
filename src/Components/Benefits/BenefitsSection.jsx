@@ -6,7 +6,7 @@ import SectionLabel from "../SectionLabel/SectionLabel";
 import "./BenefitSection.css";
 import { GlobalContext } from "../../Context/GlobalContext";
 export const BenefitsSection = () => {
-  const { trans,checkLang } = useContext(GlobalContext);
+  const { trans, checkLang } = useContext(GlobalContext);
   const benefitsList = [
     {
       title: "Flexible Learning Schedule",
@@ -55,7 +55,7 @@ export const BenefitsSection = () => {
   return (
     <div dir={checkLang ? "ltr" : "rtl"}>
       <div className=" bg-LightDark">
-        <div style={{ overflow: " hidden;" }}>
+        <div style={{ overflow: "hidden" }}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"
@@ -76,17 +76,20 @@ export const BenefitsSection = () => {
         <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">
           <SectionLabel
             color={"white"}
-            title={trans("Benefits.title")}
-            description={trans("Benefits.descrip")}
+            title={trans("benefits.title")}
+            description={trans("benefits.descrip")}
+            buttonText={trans("label.button")}
           />
           <div className="d-flex flex-wrap justify-content-center align-items-center">
-            {benefitsList.map((item, index) => (
-              <BenefitCard
-                key={`benefit-${index}`}
-                item={item}
-                index={index + 1}
-              />
-            ))}
+            {trans("benefits.list", { returnObjects: true }).map(
+              (item, index) => (
+                <BenefitCard
+                  key={`benefit-${index}`}
+                  item={item}
+                  index={index + 1}
+                />
+              )
+            )}
           </div>
         </Container>
       </div>

@@ -26,9 +26,12 @@ const FooterCol = ({ title, list }) => {
       ) : (
         <ul className="list-unstyled ">
           {list.map((ele, index) => (
-            <li>
+            <li key={`icon-${index}`}>
               {title == "logo" && <span className="pe-2">{icons[index]}</span>}
-              <a href="#!" className="text-dark footerTitleList text-decoration-none">
+              <a
+                href="#!"
+                className="text-dark footerTitleList text-decoration-none"
+              >
                 {ele}
               </a>
             </li>

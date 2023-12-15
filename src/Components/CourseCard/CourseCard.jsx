@@ -1,15 +1,22 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./CourseCard.module.css";
 import Col from "react-bootstrap/Col";
 import Aos, { init } from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
+import { GlobalContext } from "../../Context/GlobalContext";
 
 const CourseCard = ({ course }) => {
+  const { trans } = useContext(GlobalContext);
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <Col lg="4" md="6" className="p-2 shadow-lg rounded-2 cardContainer" data-aos="zoom-in">
+    <Col
+      lg="4"
+      md="6"
+      className="p-2 shadow-lg rounded-2 cardContainer"
+      data-aos="zoom-in"
+    >
       <div
         className={`${styles.card} bg-white p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm text-sm-start text-center`}
       >
@@ -18,7 +25,10 @@ const CourseCard = ({ course }) => {
         <div className="d-flex   flex-sm-row flex-column justify-content-between align-items-center ">
           <div className="d-flex gap-1 w-lg-50  -">
             {[1, 2].map((item) => (
-              <span className={`${styles.lightText} px-1 border rounded-2`}>
+              <span
+                key={item}
+                className={`${styles.lightText} px-1 border rounded-2`}
+              >
                 {item == 1 ? course.duration : course.level}
               </span>
             ))}
@@ -30,7 +40,7 @@ const CourseCard = ({ course }) => {
           <h4 className={styles.titleText}>{course.title}</h4>
           <p className={`  m-0 ${styles.coursePara}`}>{course.description}</p>
         </div>
-        <button className="btn btn-light p-2">Get It Now</button>
+        <button className="btn btn-light p-2">{trans("courses.button")}</button>
       </div>
     </Col>
   );
