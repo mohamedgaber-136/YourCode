@@ -50,7 +50,7 @@ export const FooterBar = () => {
 
       <div className={styles.copyRightText}>
         <span> &copy;{date.getFullYear()}</span>
-        <a>YourCode.</a>
+        <a>YourCode</a>
         <span> All rights reserved.</span>
       </div>
     </footer>

@@ -6,11 +6,28 @@
     border: none;
 }
 
-.glassBackGroung {
-    background: rgba(255, 255, 255, 0.25);
+.glassBackGroungDark {
+
+    transition: 0.2s;
+    background-color: rgb(0, 0, 0) !important;
+}
+.glassBackGroun{
+    position: relative;
+}
+.glassBackGroun::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    right: 0;
+    bottom: 0;
+    height:100%;
+     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.4px);
-    -webkit-backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px); 
 }
 
 .dropdown-menu {
@@ -36,12 +53,7 @@
 }
 
 .nav-link {
-transition: 1s;
-    border-radius:5px;
+    transition: 1s;
+    border-radius: 5px;
 }
 
-.nav-link:hover {
-    background-color: rgb(0, 0, 0) !important;
-    border-radius: 50px;
-    color: white;
-}

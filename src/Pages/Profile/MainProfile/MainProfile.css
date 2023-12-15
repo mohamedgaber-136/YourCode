@@ -1,0 +1,12 @@
+.ProfileNav{
+    width: 50px;
+    height: 100vh;
+    box-shadow: 0 0 5px 2px gray;
+}
+ul li {
+list-style: none;
+
+}
+.ProfileNav ul{
+    padding: 0 !important;
+}

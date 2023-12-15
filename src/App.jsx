@@ -6,6 +6,7 @@ import { AskedQuestionsSection } from "./Components/AskedQuestions/AskedQuestion
 import { useContext } from "react";
 import { GlobalContext } from "./Context/GlobalContext";
 import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
+import { DarkMode } from "./Components/DarkModeBtn/DarkMode";
 
 function App() {
   const { lang } = useContext(GlobalContext);
