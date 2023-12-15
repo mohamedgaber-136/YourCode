@@ -62,7 +62,7 @@
       {
         "id": "01",
         "title": "Web Design Fundamentals",
-        "image": "../../assets/CourseImage.png",
+        "image": "./src/assets/CourseImage.png",
         "level": "Beginner",
         "duration": "4 Weeeks",
         "instructor": "By John Smith",
@@ -71,7 +71,7 @@
       {
         "id": "02",
         "title": "UI/UX Design",
-        "image": "../../assets/CourseImage_2.png",
+        "image": "./src/assets/CourseImage_2.png",
         "level": "Intermediate",
         "duration": "6 Weeks",
         "instructor": "By Emily Johnson",
@@ -80,7 +80,7 @@
       {
         "id": "03",
         "title": "Mobile App Development",
-        "image": "../../assets/CourseImage_3.png",
+        "image": "./src/assets/CourseImage_3.png",
         "level": "Intermediate",
         "duration": "8 Weeks",
         "instructor": "By David Brown",
@@ -90,7 +90,7 @@
       {
         "id": "04",
         "title": "Graphic Design for Beginners",
-        "image": "../../assets/CourseImage_4.png",
+        "image": "./src/assets/CourseImage_4.png",
         "level": "Beginner",
         "duration": "10 Weeks",
         "instructor": "By Sarah Thompson",
@@ -99,7 +99,7 @@
       {
         "id": "05",
         "title": "Front-End Web Development",
-        "image": "../../assets/CourseImage_5.png",
+        "image": "./src/assets/CourseImage_5.png",
         "level": "Intermediate",
         "duration": "10 Weeks",
         "instructor": "By Michael Adams",
@@ -108,7 +108,7 @@
       {
         "id": "06",
         "title": "Advanced JavaScript",
-        "image": "../../assets/CourseImage_6.png",
+        "image": "./src/assets/CourseImage_6.png",
         "level": "Advance",
         "duration": "6 Weeks",
         "instructor": "By Jennifer Wilson",
@@ -166,6 +166,31 @@
       }
     ]
   },
+  "footer": {
+    "info": [
+      {
+        "title": "logo",
+        "list": [
+          "hello@yourCode.com",
+          "+20 91813 23 2309",
+          "Somewhere in the World"
+        ]
+      },
+
+      {
+        "title": "Home",
+        "list": ["Benefits", "Our Courses", "Our Testimonials", "Our FAQ"]
+      },
+      { "title": "AboutUs", "list": ["Company", "Achievements", "Our Goals"] },
+      {
+        "tag": "social",
+        "title": "Social Profiles",
+        "list": []
+      }
+    ]
+  },
+  "rights": "All rights reserved.",
+  "site": "YourCode",
   "label": {
     "button": "View More"
   }

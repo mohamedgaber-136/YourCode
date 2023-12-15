@@ -62,7 +62,7 @@
       {
         "id": "01",
         "title": "أساسيات تصميم الويب",
-        "image": "../../assets/CourseImage.png",
+        "image": "./src/assets/CourseImage.png",
         "level": "مبتدئ",
         "duration": "4 أسابيع",
         "instructor": "بواسطة جون سميث",
@@ -71,7 +71,7 @@
       {
         "id": "02",
         "title": "تصميم واجهة المستخدم",
-        "image": "../../assets/CourseImage_2.png",
+        "image": "./src/assets/CourseImage_2.png",
         "level": "متوسط",
         "duration": "6 أسابيع",
         "instructor": "بواسطة إميلي جونسون",
@@ -80,7 +80,7 @@
       {
         "id": "03",
         "title": "تطوير تطبيقات الهاتف المحمول",
-        "image": "../../assets/CourseImage_3.png",
+        "image": "./src/assets/CourseImage_3.png",
         "level": "متوسط",
         "duration": "8 أسابيع",
         "instructor": "بواسطة ديفيد براون",
@@ -90,7 +90,7 @@
       {
         "id": "04",
         "title": "التصميم الجرافيكي للمبتدئين",
-        "image": "../../assets/CourseImage_4.png",
+        "image": "./src/assets/CourseImage_4.png",
         "level": "مبتدئ",
         "duration": "10 أسابيع",
         "instructor": "بواسطة سارة طومسون",
@@ -99,7 +99,7 @@
       {
         "id": "05",
         "title": "تطوير الويب للواجهة الأمامية",
-        "image": "../../assets/CourseImage_5.png",
+        "image": "./src/assets/CourseImage_5.png",
         "level": "متوسط",
         "duration": "10 أسابيع",
         "instructor": "بواسطة مايكل ادامز",
@@ -108,7 +108,7 @@
       {
         "id": "06",
         "title": "جافا سكريبت المتقدمة",
-        "image": "../../assets/CourseImage_6.png",
+        "image": "./src/assets/CourseImage_6.png",
         "level": "متقدم",
         "duration": "6 أسابيع",
         "instructor": "بواسطة جينيفر ويلسون",
@@ -166,6 +166,28 @@
       }
     ]
   },
+  "footer": {
+    "info": [
+      {
+        "title": "logo",
+        "list": ["hello@yourCode.com", "+20 91813 23 2309", "مكان ما في العالم"]
+      },
+
+      {
+        "title": "الرئيسية",
+        "list": ["الفوائد", "دوراتنا", "شهاداتنا ", "الاسئلة الشائعة"]
+      },
+      { "title": "عننا", "list": ["الشركة", "الانجازات", "الاهداف"] },
+      {
+        "tag": "social",
+        "title": "صفحات التواصل الاجتماعي",
+        "list": []
+      }
+    ]
+  
+  },
+  "rights": "كل الحقوق محفوظة.",
+  "site": "كودك",
   "label": {
     "button": "عرض المزيد"
   }

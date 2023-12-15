@@ -7,9 +7,9 @@ import "./AskedQuestion.css";
 import { GlobalContext } from "../../Context/GlobalContext";
 
 export const AskedQuestionsSection = () => {
-  const { trans } = useContext(GlobalContext);
+  const { trans, checkLang } = useContext(GlobalContext);
   return (
-    <>
+    <div dir={checkLang ? "ltr" : "rtl"}>
       <div className="  bg-LightDark">
         <div style={{ overflow: "hidden" }}>
           <svg
@@ -32,7 +32,7 @@ export const AskedQuestionsSection = () => {
         <div className="container-fluid">
           <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">
             <Row>
-              <Col lg="4" className="text-light">
+              <Col lg="4" className="text-light p-4 p-lg-0">
                 <h3>{trans("askedQue.title")}</h3>
                 <p className="fs-6">{trans("askedQue.descrip")}</p>
                 <button className="btn btn-light">
@@ -48,21 +48,8 @@ export const AskedQuestionsSection = () => {
                         className="border m-2 rounded-2 overflow-hidden"
                         eventKey={index}
                       >
-                        <Accordion.Header className="fw-bolder" color="grey">
-                          {item.question}
-                        </Accordion.Header>
-                        <Accordion.Body>
-                          {item.answer}
-                          <br />
-                          Eiusmod Lorem esse fugiat consequat ea qui
-                          exercitation non id. Culpa fugiat culpa deserunt
-                          laborum elit fugiat id cillum occaecat nostrud. Lorem
-                          consequat ea sit consequat deserunt excepteur proident
-                          excepteur sint consectetur do deserunt. Commodo eu
-                          incididunt pariatur consectetur elit do irure anim.
-                          Aute veniam ea elit qui exercitation id culpa aute in
-                          labore do.
-                        </Accordion.Body>
+                        <Accordion.Header>{item.question}</Accordion.Header>
+                        <Accordion.Body>{item.answer}</Accordion.Body>
                       </Accordion.Item>
                     )
                   )}
@@ -92,6 +79,6 @@ export const AskedQuestionsSection = () => {
           </svg>
         </div>
       </div>
-    </>
+    </div>
   );
 };

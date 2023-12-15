@@ -18,7 +18,7 @@ const CourseCard = ({ course }) => {
       data-aos="zoom-in"
     >
       <div
-        className={`${styles.card} bg-white p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm text-sm-start text-center`}
+        className={`${styles.card} bg-white p-3 rounded-2 gap-3 d-flex flex-column justify-content-between shadow-sm`}
       >
         <img src={course.image} width={"100%"} className="rounded-3" />
 

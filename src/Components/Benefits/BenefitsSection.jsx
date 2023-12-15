@@ -79,6 +79,7 @@ export const BenefitsSection = () => {
             title={trans("benefits.title")}
             description={trans("benefits.descrip")}
             buttonText={trans("label.button")}
+            buttonColor={"light"}
           />
           <div className="d-flex flex-wrap justify-content-center align-items-center">
             {trans("benefits.list", { returnObjects: true }).map(

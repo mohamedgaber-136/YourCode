@@ -6,10 +6,10 @@ import { useContext } from "react";
 import { GlobalContext } from "../../Context/GlobalContext";
 
 const OurCoursesSection = () => {
-  const { trans } = useContext(GlobalContext);
+  const { trans, checkLang } = useContext(GlobalContext);
 
   return (
-    <div className="bg-white">
+    <div dir={checkLang ? "ltr" : "rtl"} className="bg-white">
       <div style={{ overflow: "hidden" }}>
         <svg
           preserveAspectRatio="none"
@@ -32,6 +32,8 @@ const OurCoursesSection = () => {
         <SectionLabel
           title={trans("courses.title")}
           description={trans("courses.descrip")}
+          buttonText={trans("label.button")}
+          buttonColor={'dark'}
         />
         <div className="d-flex flex-wrap justify-content-center  align-items-center">
           {trans("courses.list", { returnObjects: true }).map((item) => (
