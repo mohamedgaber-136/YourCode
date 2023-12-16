@@ -15,11 +15,17 @@ export const ProfileCover = () => {
           <h5 className="text-center text-secondary">@twitter</h5>
           <div className="d-flex justify-content-center gap-3 ">
             <div className="followers d-flex align-items-center gap-1">
-              <span className=" bg-danger rounded-circle d-flex justify-content-center align-items-center NumbersSpans">14</span> <p className="m-0">following</p>
+              <span className="bg  rounded-circle d-flex justify-content-center align-items-center NumbersSpans">
+                14
+              </span>{" "}
+              <p className="m-0">following</p>
             </div>
             <div className="Following d-flex align-items-center gap-1">
               {" "}
-              <span className="bg-success rounded-circle d-flex justify-content-center align-items-center NumbersSpans">17</span> <p className="m-0">followers</p>
+              <span className="bg-light rounded-circle d-flex justify-content-center align-items-center NumbersSpans">
+                17
+              </span>{" "}
+              <p className="m-0">followers</p>
             </div>
             <div className="icons"></div>
           </div>

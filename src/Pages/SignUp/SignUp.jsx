@@ -17,12 +17,15 @@ export const SignUp = () => {
         <div className=" signImgParent">
           <img src={Img} alt="signInImage" />
         </div>
-        <form className="form ">
+        <form
+          className="form "
+         
+        >
           <p className="title">Register </p>
           <p className="message">Signup now and get full access to our app. </p>
           <div className="flex">
             {InputsDataNames.map((item, ind) => (
-              <Inputs type={item.type} spanText={item.span} />
+              <Inputs key={ind} type={item.type} spanText={item.span} />
             ))}
           </div>
           <label>

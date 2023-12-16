@@ -47,6 +47,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <FooterBar />
         </CheckFooter>
       </BrowserRouter>
-    </GlobalContextProvider>
-  </I18nextProvider>
+    </GlobalContextProvider>  
+    </I18nextProvider>
 );
