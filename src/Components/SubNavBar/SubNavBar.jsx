@@ -6,7 +6,9 @@ import "swiper/css/free-mode";
 import "./Subnav.css";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import { Link, useNavigate } from "react-router-dom";
 function SubNavBar() {
+  const navigator = useNavigate();
   let CourseSplite = [
     "Html5",
     "CSS3",
@@ -17,10 +19,10 @@ function SubNavBar() {
     "ReactJs",
     "OOP",
     "Dart",
-    "flutter",
+    "Flutter",
   ];
   return (
-    <div className='subNavParent'>
+    <div className="subNavParent">
       <Swiper
         slidesPerView={6}
         spaceBetween={0}
@@ -29,7 +31,11 @@ function SubNavBar() {
         className="mySwiper"
       >
         {CourseSplite.map((item, ind) => (
-          <SwiperSlide className=" text-light SubNavItem" key={ind}>
+          <SwiperSlide
+            key={ind}
+            className=" text-light SubNavItem"
+            onClick={() => navigator(`/Explore/${item}/intro`)}
+          >
             {item}
           </SwiperSlide>
         ))}

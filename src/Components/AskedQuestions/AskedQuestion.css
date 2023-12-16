@@ -1,6 +1,6 @@
 .accordion-button {
   font-size: 12px !important;
-  font-weight: bold;
+  font-weight: 800 !important;
 }
 
 .accordion-body {
@@ -8,15 +8,18 @@
 }
 
 .accordion-button::after {
-  background-image: url(../../assets/addIcon.svg);
-  background-position: center;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  padding: 5px;
+  background-image: url(../../assets/addIcon.svg) !important;
+  background-position: center !important;
+  border: 1px solid lightgray !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  /* margin-left: auto !important; */
+  /* margin-right: auto !important; */
+  /* change margin based on direction */
 }
 
 .accordion-button:not(.collapsed) {
   color: black;
-  background-color: #90b8f8;
+  background-color: #90b8f8 !important;
   box-shadow: none !important;
 }
