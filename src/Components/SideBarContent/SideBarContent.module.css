@@ -1,0 +1,47 @@
+.accordion {
+  --bs-accordion-border-width: 0 !important;
+  --bs-accordion-border-radius: 0 !important;
+  --bs-accordion-bg: black !important;
+  --bs-accordion-body-padding-x: 0 !important;
+  --bs-accordion-body-padding-y: 0 !important;
+  /* --bs-accordion-color:red !important; */
+  /* --bs-accordion-btn-color: black !important; */
+}
+
+/* .accordionButton:not(.collapsed) button { */
+/* color: black !important; */
+/* background-color: black !important; */
+/* } */
+
+.accordionButton button::after {
+  background-image: var(--bs-accordion-btn-icon) !important;
+  background-position: center !important;
+  background-size: 80% !important;
+  border: none !important;
+  color: black !important;
+}
+
+.accordionButton button {
+  /* background-color: black !important; */
+  color: white !important;
+}
+
+.accordionBody {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.accordionBody div {
+  padding: 10px 22px;
+}
+
+.accordionBody div:hover {
+  background-color: blue !important;
+}
+
+/* .item {
+  padding: 10px 0;
+}
+
+.item:hover {
+  background-color: red;
+} */
