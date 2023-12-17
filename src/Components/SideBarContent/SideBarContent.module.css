@@ -4,16 +4,11 @@
   --bs-accordion-bg: black !important;
   --bs-accordion-body-padding-x: 0 !important;
   --bs-accordion-body-padding-y: 0 !important;
-  /* --bs-accordion-color:red !important; */
-  /* --bs-accordion-btn-color: black !important; */
+
+  /* --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important; */
 }
 
-/* .accordionButton:not(.collapsed) button { */
-/* color: black !important; */
-/* background-color: black !important; */
-/* } */
-
-.accordionButton button::after {
+.accordionButton::after {
   background-image: var(--bs-accordion-btn-icon) !important;
   background-position: center !important;
   background-size: 80% !important;
@@ -21,8 +16,7 @@
   color: black !important;
 }
 
-.accordionButton button {
-  /* background-color: black !important; */
+.accordionButton {
   color: white !important;
 }
 
@@ -35,7 +29,7 @@
 }
 
 .accordionBody div:hover {
-  background-color: blue !important;
+  background-color: #90b8f8 !important;
 }
 
 /* .item {

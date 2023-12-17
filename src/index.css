@@ -2,19 +2,31 @@
   font-family: "Merriweather", serif;
 }
 
-.mainSpacer{
+.mainSpacer {
   padding: 60px;
 }
-.NumberTitle{
+.NumberTitle {
   color: #90b8f8a2;
 }
-.benefitPara{
+.benefitPara {
   font-size: 12px !important;
- 
 }
-.CheckNavBar{
+.CheckNavBar {
   height: 100px;
 }
-.cardContainer{
+.cardContainer {
   gap: 10px !important;
 }
+
+.fontSize14 {
+  font-size: 14px !important;
+}
+
+.fontSize12 {
+  font-size: 12px !important;
+}
+
+.fontSize10 {
+  font-size: 10px !important;
+}
+

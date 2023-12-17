@@ -254,9 +254,19 @@ export const ExploreContent = () => {
     navigator(`/Explore/${content}/${found.content[0].list[0]}`);
   }, [content]);
 
+  useEffect(() => {
+    return () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    };
+  }, [content, section]);
+
   return (
     <>
-      <div  style={{ height: "99px" }} />
+      <div style={{ height: "99px" }} />
       <div className="vh-100 d-flex align-items-start justify-content-start">
         <SideBarContent content={content} list={found.content} />
         <div className="p-4 m-2 bg-light rounded-2 w-100 h-100 d-flex flex-column align-items-center justify-content-center">

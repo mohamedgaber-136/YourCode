@@ -48,8 +48,12 @@ export const AskedQuestionsSection = () => {
                         className="border m-2 rounded-2 overflow-hidden"
                         eventKey={index}
                       >
-                        <Accordion.Header>{item.question}</Accordion.Header>
-                        <Accordion.Body>{item.answer}</Accordion.Body>
+                        <Accordion.Button className="fontSize12 fw-bolder">
+                          {item.question}
+                        </Accordion.Button>
+                        <Accordion.Body className="fontSize12">
+                          {item.answer}
+                        </Accordion.Body>
                       </Accordion.Item>
                     )
                   )}
