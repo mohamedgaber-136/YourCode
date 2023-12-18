@@ -18,6 +18,7 @@ import { CheckNavBar } from "./Components/CheckNavBar/CheckNavBar.jsx";
 import { MainProfile } from "./Pages/Profile/MainProfile/MainProfile.jsx";
 import { CheckFooter } from "./Components/CheckFooter/CheckFooter.jsx";
 import { ExploreContent } from "./Pages/ExploreContent/ExploreContent.jsx";
+import { CourseDetails } from "./Pages/CourseDetails/CourseDetails.jsx";
 import { FavouriteCourses } from "./Pages/Profile/FavouriteCourses/FavouriteCourses.jsx";
 import { RootLayout } from "./Layout/RootLayout.jsx";
 import { ProfileData } from "./Pages/Profile/ProfileData/ProfileData.jsx";

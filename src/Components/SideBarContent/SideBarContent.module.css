@@ -9,7 +9,9 @@
 
 
 
-.accordionButton button::after {
+
+
+.accordionButton::after {
   background-image: var(--bs-accordion-btn-icon) !important;
   background-position: center !important;
   background-size: 80% !important;
@@ -17,8 +19,7 @@
   color: black !important;
 }
 
-.accordionButton button {
-  /* background-color: black !important; */
+.accordionButton {
   color: white !important;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .accordionBody div:hover {
-  background-color: blue !important;
+  background-color: #90b8f8 !important;
 }
 .sideBarPos{
   position: relative;

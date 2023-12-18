@@ -62,7 +62,7 @@
       {
         "id": "01",
         "title": "أساسيات تصميم الويب",
-        "image": "./src/assets/CourseImage.png",
+        "image": "/src/assets/CourseImage.png",
         "level": "مبتدئ",
         "duration": "4 أسابيع",
         "instructor": "بواسطة جون سميث",
@@ -71,7 +71,7 @@
       {
         "id": "02",
         "title": "تصميم واجهة المستخدم",
-        "image": "./src/assets/CourseImage_2.png",
+        "image": "/src/assets/CourseImage_2.png",
         "level": "متوسط",
         "duration": "6 أسابيع",
         "instructor": "بواسطة إميلي جونسون",
@@ -80,7 +80,7 @@
       {
         "id": "03",
         "title": "تطوير تطبيقات الهاتف المحمول",
-        "image": "./src/assets/CourseImage_3.png",
+        "image": "/src/assets/CourseImage_3.png",
         "level": "متوسط",
         "duration": "8 أسابيع",
         "instructor": "بواسطة ديفيد براون",
@@ -90,7 +90,7 @@
       {
         "id": "04",
         "title": "التصميم الجرافيكي للمبتدئين",
-        "image": "./src/assets/CourseImage_4.png",
+        "image": "/src/assets/CourseImage_4.png",
         "level": "مبتدئ",
         "duration": "10 أسابيع",
         "instructor": "بواسطة سارة طومسون",
@@ -99,7 +99,7 @@
       {
         "id": "05",
         "title": "تطوير الويب للواجهة الأمامية",
-        "image": "./src/assets/CourseImage_5.png",
+        "image": "/src/assets/CourseImage_5.png",
         "level": "متوسط",
         "duration": "10 أسابيع",
         "instructor": "بواسطة مايكل ادامز",
@@ -108,14 +108,14 @@
       {
         "id": "06",
         "title": "جافا سكريبت المتقدمة",
-        "image": "./src/assets/CourseImage_6.png",
+        "image": "/src/assets/CourseImage_6.png",
         "level": "متقدم",
         "duration": "6 أسابيع",
         "instructor": "بواسطة جينيفر ويلسون",
         "description": "خذ مهاراتك في JavaScript إلى المستوى التالي. استكشف المفاهيم المتقدمة مثل عمليات الإغلاق والنماذج الأولية والبرمجة غير المتزامنة وميزات ES6. أنشئ تطبيقات معقدة بثقة."
       }
     ],
-    "button": "احصل عليه الآن"
+    "button": "شاهده الآن"
   },
   "askedQue": {
     "title": "أسئلة شائعة",
@@ -184,7 +184,6 @@
         "list": []
       }
     ]
-  
   },
   "rights": "كل الحقوق محفوظة.",
   "site": "كودك",

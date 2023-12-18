@@ -19,14 +19,14 @@
   background-position: center !important;
   border: 1px solid lightgray !important;
   border-radius: 5px !important;
-  padding: 5px !important;
+  padding: 10px !important;
   /* margin-left: auto !important; */
   /* margin-right: auto !important; */
   /* change margin based on direction */
 }
 
 .accordion-button:not(.collapsed) {
-  color: black;
+  color: black !important;
   background-color: #90b8f8 !important;
   box-shadow: none !important;
 }

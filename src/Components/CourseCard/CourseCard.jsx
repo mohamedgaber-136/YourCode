@@ -4,8 +4,10 @@ import Col from "react-bootstrap/Col";
 import Aos, { init } from "aos";
 import "aos/dist/aos.css";
 import { GlobalContext } from "../../Context/GlobalContext";
+import { useNavigate } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
+  const navigator = useNavigate();
   const { trans } = useContext(GlobalContext);
   useEffect(() => {
     Aos.init();
@@ -40,7 +42,18 @@ const CourseCard = ({ course }) => {
           <h4 className={styles.titleText}>{course.title}</h4>
           <p className={`  m-0 ${styles.coursePara}`}>{course.description}</p>
         </div>
-        <button className="btn btn-light p-2">{trans("courses.button")}</button>
+        <button
+          className="btn btn-light p-2"
+          onClick={() =>
+            navigator(`/CourseDetails/${course.title}`, {
+              state: {
+                courseID: course.id,
+              },
+            })
+          }
+        >
+          {trans("courses.button")}
+        </button>
       </div>
     </Col>
   );
