@@ -1,0 +1,48 @@
+.accordion {
+  --bs-accordion-border-width: 0 !important;
+  --bs-accordion-border-radius: 0 !important;
+  --bs-accordion-bg: black !important;
+  --bs-accordion-body-padding-x: 0 !important;
+  --bs-accordion-body-padding-y: 0 !important;
+}
+
+.accordionButton::after {
+ 
+
+  background-image: var(--bs-accordion-btn-icon) !important;
+  background-position: center !important;
+  background-size: 80% !important;
+  border: none !important;
+  color: black !important;
+}
+
+.accordionButton {
+  color: white !important;
+}
+
+.accordionBody {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.accordionBody div {
+  padding: 10px 22px;
+}
+
+.accordionBody div:hover {
+  background-color: #5f85db !important;
+}
+.sideBarPos {
+  position: relative;
+  top: 100px;
+  height: 100vh;
+}
+.sideBarFixed {
+  position: fixed;
+  background-color: black;
+  left: 0;
+  width: 30%;
+}
+
+.bgBlue {
+  background-color: #5f85db !important;
+}

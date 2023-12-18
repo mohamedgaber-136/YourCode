@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { SideBarContent } from "../../Components/SideBarContent/SideBarContent";
-import './ExploreContent.css'
+import "./ExploreContent.css";
 import { FooterBar } from "../../Components/FooterBar/FooterBar";
 export const ExploreContent = () => {
   let { content, section } = useParams();
@@ -247,12 +247,6 @@ export const ExploreContent = () => {
   ];
   const found = dataSplite.find((item) => item.id == content);
 
-  const navigator = useNavigate();
-  useEffect(() => {
-    console.log(found, "found");
-    navigator(`/Explore/${content}/${found.content[0].list[0]}`);
-  }, [content]);
-
   useEffect(() => {
     return () => {
       window.scrollTo({
@@ -281,9 +275,9 @@ export const ExploreContent = () => {
         </div>
       </div>
       <div className="d-flex justify-content-end">
-      <div className="ContentTutorial ">
-        <FooterBar/>
-      </div>
+        <div className="ContentTutorial ">
+          <FooterBar />
+        </div>
       </div>
     </>
   );
