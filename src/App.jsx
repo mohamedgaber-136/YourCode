@@ -6,19 +6,9 @@ import { AskedQuestionsSection } from "./Components/AskedQuestions/AskedQuestion
 import { useContext, useEffect } from "react";
 import { GlobalContext } from "./Context/GlobalContext";
 import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 function App() {
- 
-  return (<>
-<Helmet>
-        <title>YourCode</title>
-        <meta name="description" content="Helmet application" />
-    </Helmet>
-
-  const { lang } = useContext(GlobalContext);
-  console.log(lang, "lang");
-  console.log("lang");
   useEffect(() => {
     return () => {
       window.scrollTo({
@@ -29,15 +19,21 @@ function App() {
     };
   }, []);
   return (
-    <div className="bg-light">
-      <Header />
-      <CoursesIcons />
-      <BenefitsSection />
-      <OurCoursesSection />
-      <AskedQuestionsSection />
-      {/* <ModalForSignIn/> */}
-    </div>
-  </>
+    <>
+      <Helmet>
+        <title>YourCode</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
+
+      <div className="bg-light">
+        <Header />
+        <CoursesIcons />
+        <BenefitsSection />
+        <OurCoursesSection />
+        <AskedQuestionsSection />
+        {/* <ModalForSignIn/> */}
+      </div>
+    </>
   );
 }
 
