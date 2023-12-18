@@ -50,6 +50,7 @@ const router = createBrowserRouter(
       <Route path="QuizesInfo" element={<QuizInfo/>}/>
     </Route>
     <Route path="/Explore/:content/:section" element={<ExploreContent/>} />
+    <Route path="/CourseDetails/:title" element={<CourseDetails/>} />
   </Route>
 
   )
