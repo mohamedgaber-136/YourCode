@@ -1,34 +1,9 @@
-import React, { useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
 import { useOutletContext } from "react-router-dom";
+import { Chart, registerables } from 'chart.js';
 export const QuizInfo = () => {
+  Chart.register(...registerables);
   const questionData = useOutletContext()
-  useEffect(() => {
-    // Register a custom plugin for the wavy effect
-    Chart.register({
-      id: 'wavyLines',
-      beforeDraw: (chart) => {
-        const ctx = chart.ctx;
-        const xAxis = chart.scales['x-axis-0'];
-        const yAxis = chart.scales['y-axis-0'];
-
-        if (xAxis && yAxis) {
-          const waveHeight = 15;
-          const frequency = 0.05;
-          const amplitude = 5;
-
-          const originalLineTo = ctx.lineTo.bind(ctx);
-
-          ctx.lineTo = (x, y) => {
-            const newY = y + amplitude * Math.sin(frequency * x);
-            originalLineTo(x, newY);
-          };
-        }
-      },
-    });
-  }, []);
-
   const data = {
     labels: questionData.map((question, index) => `day ${index + 1}`),
     datasets: [

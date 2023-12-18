@@ -10,16 +10,10 @@ import {Helmet} from "react-helmet";
 
 function App() {
  
-  return (<>
-<Helmet>
-        <title>YourCode</title>
-        <meta name="description" content="Helmet application" />
-    </Helmet>
-
   const { lang } = useContext(GlobalContext);
   console.log(lang, "lang");
   console.log("lang");
-  useEffect(() => {
+ useEffect(() => {
     return () => {
       window.scrollTo({
         top: 0,
@@ -27,8 +21,12 @@ function App() {
         behavior: "smooth",
       });
     };
-  }, []);
-  return (
+  }, []); 
+  return (<>
+<Helmet>
+        <title>YourCode</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
     <div className="bg-light">
       <Header />
       <CoursesIcons />

@@ -265,8 +265,7 @@ export const ExploreContent = () => {
 
   return (
     <>
-      <div style={{ height: "99px" }} />
-      <div className="vh-100 d-flex align-items-start justify-content-start">
+      <div className="vh-100 d-flex align-items-start justify-content-end">
         <SideBarContent content={content} list={found.content} />
         <div className="p-4 m-2 bg-light rounded-2 ContentTutorial h-100 d-flex flex-column align-items-center justify-content-center">
           <h2>{content}</h2>
