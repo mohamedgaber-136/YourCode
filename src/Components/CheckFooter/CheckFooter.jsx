@@ -1,22 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-export const CheckFooter = ({ children }) => {
+import { FooterBar } from "../FooterBar/FooterBar";
+export const CheckFooter = () => {
   const location = useLocation();
   let [ShowFooter, setShowFooter] = useState(true);
+  console.log(location.pathname,'pathNameFooter')
   useEffect(() => {
     switch (location.pathname) {
-      case "/Login":
-      case "/SignUp":
-      case "/MainProfile":
-        setShowFooter(false);
-        break;
-      default:
+      case "/":
         setShowFooter(true);
-    }
-  });
+        break;
+        default:
+          setShowFooter(false);
+        }
+      });
+      console.log(ShowFooter)
   return (
     <div >
-      {ShowFooter ? children : ""}
+      {
+        ShowFooter?      <FooterBar/>
+        :''
+      }
     </div>
   );
 };

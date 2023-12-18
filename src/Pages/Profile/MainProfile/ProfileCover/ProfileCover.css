@@ -5,19 +5,32 @@
     width: 100%;
     height: 250px;
 }
+.profileMain{
+    width: 95%;
+    position: relative;
+    left: 5%;
+}
+.accountData{
+    position: relative;
+}
+.AccountInfos{
+    
+    left: 180px;
+    position: absolute;
+}
 .ProfileImg{
     width: 200px;
     height: 200px;
     border-radius: 5px;
-    left:50px;
+    left:150px;
     top: -100px;
     padding: 5px;
     background-color: whitesmoke;
     position: relative;
 }
 .NameSection{
-    height: 200px;
-
+    border: 1px solid lightgray;
+    box-shadow: 10px 0px 15px 2px lightgray;
 }
 .ProfileImg img {
     border-radius: 5px;
@@ -34,4 +47,22 @@
     width: 30px;
     height: 30px;
     
+}
+
+@media(max-width:767px){
+    .ProfileImg{
+      
+        left:0%;
+        top: -100px;
+      
+    }
+    .AccountInfos{
+        top: -100px;
+        left: 0;
+        position: relative;
+    }
+    .profileMain{
+        width: 90%;
+        left: 10%;
+    }
 }

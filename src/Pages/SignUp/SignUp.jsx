@@ -2,7 +2,12 @@ import React from "react";
 import "./SignIn.css";
 import { Inputs } from "../../Components/Inputs/Inputs";
 import Img from "./Leonardo_Diffusion_XL_software_Thinking_2.jpg";
+import {useNavigate} from 'react-router-dom'
+import {Helmet} from "react-helmet";
+
 export const SignUp = () => {
+  let navigator = useNavigate()
+
   const InputsDataNames = [
     { type: "text", span: "FirstName" },
     { type: "text", span: "LastName" },
@@ -11,8 +16,13 @@ export const SignUp = () => {
     { type: "password", span: "password" },
     { type: "password", span: "Confirm Password" },
   ];
-  return (
-    <div className="d-flex justify-content-center align-items-center SignParent">
+  return ( 
+    <>
+    <Helmet>
+        <title>Signup</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
+    <div className="d-flex justify-content-center align-items-center SignParent container">
       <div className="d-flex justify-content-center SignIn flex-column flex-md-row  ">
         <div className=" signImgParent">
           <img src={Img} alt="signInImage" />
@@ -29,7 +39,7 @@ export const SignUp = () => {
             ))}
           </div>
           <label>
-            <input type="email" class="input" />
+            <input type="email" className="input" />
             <span className="text-dark">Email</span>
           </label>
           <div className="flex"></div>
@@ -38,10 +48,14 @@ export const SignUp = () => {
           ))}
           <button className="submit">Submit</button>
           <p className="signin">
-            Already have an acount ? <a href="#">Signin</a>{" "}
+            Already have an acount ? <a href="/">Signin</a>{" "}
           </p>
         </form>
       </div>
+      <i className="fa-solid fa-xmark CloseForm" onClick={()=>{navigator('/')}}></i>
+
     </div>
+    </>
+
   );
 };

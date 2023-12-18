@@ -4,14 +4,10 @@
   --bs-accordion-bg: black !important;
   --bs-accordion-body-padding-x: 0 !important;
   --bs-accordion-body-padding-y: 0 !important;
-  /* --bs-accordion-color:red !important; */
-  /* --bs-accordion-btn-color: black !important; */
+
 }
 
-/* .accordionButton:not(.collapsed) button { */
-/* color: black !important; */
-/* background-color: black !important; */
-/* } */
+
 
 .accordionButton button::after {
   background-image: var(--bs-accordion-btn-icon) !important;
@@ -37,11 +33,13 @@
 .accordionBody div:hover {
   background-color: blue !important;
 }
-
-/* .item {
-  padding: 10px 0;
+.sideBarPos{
+  position: relative;
+  top: 100px;
+}
+.sideBarFixed{
+  position: fixed;
+  left:0;
+  width: 15%;
 }
 
-.item:hover {
-  background-color: red;
-} */

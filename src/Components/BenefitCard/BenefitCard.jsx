@@ -17,9 +17,7 @@ export const BenefitCard = ({ item, index }) => {
       >
         <h2 className="align-self-end NumberTitle fs-1">
           {index.toString().length == 1 ? `0${index}` : `${index}`}
-          {/* {index.toString().length == 1
-            ? toIndiaDigits(`0${index}`)
-            : toIndiaDigits(`${index}`)} */}
+      
         </h2>
         <div className="d-flex flex-column gap-1">
           <h5 className="fw-bold">{item.title}</h5>

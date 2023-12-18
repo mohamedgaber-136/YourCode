@@ -45,7 +45,7 @@ export const AskedQuestionsSection = () => {
                     (item, index) => (
                       <Accordion.Item
                         key={`accd-${index}`}
-                        className="border m-2 rounded-2 overflow-hidden"
+                        className="border m-2 rounded-2 overflow-hidden HomeAccordion"
                         eventKey={index}
                       >
                         <Accordion.Header>{item.question}</Accordion.Header>

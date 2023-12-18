@@ -7,14 +7,12 @@ import styles from "./SideBarContent.module.css";
 
 export const SideBarContent = ({ list, content }) => {
   return (
-    <Col
-      lg="2"
-      md="3"
-      sm="3"
-      xs="3"
+    <div
       style={{ backgroundColor: "black", }}
+      className={`${styles.sideBarFixed}`}
     >
-      <aside className="overflow-y-scroll" style={{height: "100vh" }}>
+      <aside className={`overflow-y-scroll ${styles.sideBarPos} `} style={{height: "100vh" }}>
+        <h6 className="text-white p-2 ">{content} Tutorial</h6>
         <Accordion
           data-bs-theme="dark"
           defaultActiveKey="0"
@@ -49,6 +47,6 @@ export const SideBarContent = ({ list, content }) => {
           ))}
         </Accordion>
       </aside>
-    </Col>
+    </div>
   );
 };

@@ -2,11 +2,21 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
+}
+.signImgParent{
+    border-radius: 50px 0 0 50px;
+}
+.CloseForm {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-size: 25px !important;
+    right: 25px;
 }
 
 .SignParent {
     width: 100%;
+    position: relative;
     height: 100vh;
 }
 
@@ -153,15 +163,22 @@
 
 
 
-@media(max-width:426px) {
+@media(max-width:767px) {
 
     .SignIn {
         width: 400px !important;
         overflow: hidden;
+        max-height: 700px !important;
     }
 
+    .signImgParent {
+
+        border-radius: 0px 50px 0px 0px !important;
+    }
+    
+    
     .signImgParent img {
-        border-radius: 20px 20px 0 0 !important;
+        border-radius: 50px 50px 0px 0px !important;
         width: 400px !important;
     }
 
@@ -171,7 +188,7 @@
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:425px) {
     .signImgParent {
         display: none !important;
     }

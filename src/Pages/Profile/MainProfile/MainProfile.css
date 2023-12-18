@@ -1,12 +1,42 @@
-.ProfileNav{
-    width: 50px;
-    height: 100vh;
+.ProfileNav {
+    width: 5%;
     box-shadow: 0 0 5px 2px gray;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    top: 0;
+}
+
+.sidBarImg {
+    width: 100px;
+    top: 20px;
+    position: absolute;
+}
+
+.ProfileNav ul li img {
+    width: 100%;
+    object-fit: cover;
+}
+ul{
+ height: 100%; 
+ position: relative;
 }
 ul li {
-list-style: none;
+    list-style: none;
+    cursor: pointer;
 
 }
-.ProfileNav ul{
-    padding: 0 !important;
+
+.ProfileNav ul {
+    padding: 20px !important;
+}
+
+@media (max-width: 768px) {
+    .ProfileNav {
+        width: 10%;
+
+    }
+    .sidBarImg{
+        width: 70px;
+    }
 }

@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-export const CheckNavBar = ({ children }) => {
+import NavbarComp from "../NavBar/Navbar";
+import SubNavBar from "../SubNavBar/SubNavBar";
+export const CheckNavBar = () => {
   const location = useLocation();
   let [showNavBar, setShowNavBar] = useState(true);
+  console.log(location.pathname,'pathName')
   useEffect(() => {
     switch (location.pathname) {
-      case "/Login":
-      case "/SignUp":
-      case "/MainProfile":
-        setShowNavBar(false);
+      case "/":
+        setShowNavBar(true);
         break;
       default:
-        setShowNavBar(true);
+        setShowNavBar(false);
     }
   });
+  console.log(showNavBar,'NAv')
   return (
-    <div className="fixed-top w-100 CheckNavBar">
-      {showNavBar ? children : ""}
-    </div>
+<>
+{
+  showNavBar?<div className="fixed-top w-100 CheckNavBar">
+    <NavbarComp/>
+    <SubNavBar/>
+  </div>:''
+}
+</>
+      
   );
 };

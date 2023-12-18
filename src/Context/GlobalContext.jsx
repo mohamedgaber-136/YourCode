@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { createContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 export const GlobalContext = createContext();
 const GlobalContextProvider = (props) => {
@@ -20,21 +19,13 @@ const GlobalContextProvider = (props) => {
     });
   };
 
-  // String.prototype.toIndiaDigits = function () {
-  //   const id = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
-  //   return this.replace(/[0-9]/g, function (w) {
-  //     return id[+w];
-  //   });
-  // };
-  // var content = $("body").html();
-  // $("body").html(content.toIndiaDigits());
+ 
 
   return (
     <GlobalContext.Provider
       value={{ checkLang, trans, handleLang, toIndiaDigits }}
     >
       {props.children}
-      {/* {checkLang ? props.children : props.children} */}
     </GlobalContext.Provider>
   );
 };

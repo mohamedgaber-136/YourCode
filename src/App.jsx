@@ -3,16 +3,17 @@ import { CoursesIcons } from "./Components/CoursesIcons/CoursesIcons";
 import { Header } from "./Components/Header/Header";
 import { BenefitsSection } from "./Components/Benefits/BenefitsSection";
 import { AskedQuestionsSection } from "./Components/AskedQuestions/AskedQuestionsSection";
-import { useContext } from "react";
-import { GlobalContext } from "./Context/GlobalContext";
 import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
-import { DarkMode } from "./Components/DarkModeBtn/DarkMode";
+import {Helmet} from "react-helmet";
 
 function App() {
-  const { lang } = useContext(GlobalContext);
-  console.log(lang, "lang");
-  console.log("lang");
-  return (
+ 
+  return (<>
+<Helmet>
+        <title>YourCode</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
+
     <div className="bg-light">
       <Header />
       <CoursesIcons />
@@ -21,6 +22,7 @@ function App() {
       <AskedQuestionsSection />
       {/* <ModalForSignIn/> */}
     </div>
+  </>
   );
 }
 

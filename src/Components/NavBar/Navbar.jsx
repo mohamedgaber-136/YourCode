@@ -82,7 +82,7 @@ const NavbarComp = () => {
                 text={trans("Navbar.Test")}
                 color={"#F4F27E"}
                 fontColor={"black"}
-                NavigDestination={"/MainProfile"}
+                NavigDestination={"/MainProfile/profileData"}
               />
             </div>
           </Nav>
