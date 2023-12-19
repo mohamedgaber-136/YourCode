@@ -9,7 +9,7 @@ const OurCoursesSection = () => {
   const { trans, checkLang } = useContext(GlobalContext);
 
   return (
-    <div dir={checkLang ? "ltr" : "rtl"} className="bg-white">
+    <section dir={checkLang ? "ltr" : "rtl"} className="bg-white">
       <div style={{ overflow: "hidden" }}>
         <svg
           preserveAspectRatio="none"
@@ -41,7 +41,7 @@ const OurCoursesSection = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ export const Header = () => {
   const { trans, checkLang } = useContext(GlobalContext);
   return (
     <>
-      <div style={{ overflow: "hidden" }}>
+      {/* <div style={{ overflow: "hidden" }}>
         <svg
           preserveAspectRatio="none"
           viewBox="0 0 1200 120"
@@ -22,21 +22,21 @@ export const Header = () => {
           />
           <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
         </svg>
-      </div>
-      <header className=" container d-flex justify-content-center align-items-center headerParent ">
+      </div> */}
+      <header className="  d-flex justify-content-center align-items-center headerParent ">
         <div className="headerChild">
           <div
             dir={checkLang ? "ltr" : "rtl"}
             className="d-flex justify-content-center align-items-center gap-3 "
           >
-            <i className="fa-solid fa-bolt  bg-dark p-2 rounded-circle"></i>
-            <h2 className="m-0 text-center">
+            <i className="fa-solid fa-bolt  bg-white p-2 rounded-circle"></i>
+            <h2 className="m-0 text-center text-white">
               <span className="textUnlock">{trans("Header.colored")}</span>{" "}
               {trans("Header.first")}
             </h2>
           </div>
-          <h5 className="m-0 text-center">{trans("Header.second")}</h5>
-          <h6 className="m-0 text-center">{trans("Header.third")} </h6>
+          <h5 className="m-0 text-center text-white">{trans("Header.second")}</h5>
+          <h6 className="m-0 text-center text-white">{trans("Header.third")} </h6>
           <div className="d-flex">
             <button className="btn  buttonsWithoutBorderRight">
               {trans("Header.explore")}

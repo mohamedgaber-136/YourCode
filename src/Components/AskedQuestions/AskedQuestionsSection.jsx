@@ -3,13 +3,14 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Accordion from "react-bootstrap/Accordion";
+import charc from './3d-character-guy-png.webp'
 import "./AskedQuestion.css";
 import { GlobalContext } from "../../Context/GlobalContext";
 
 export const AskedQuestionsSection = () => {
   const { trans, checkLang } = useContext(GlobalContext);
   return (
-    <div dir={checkLang ? "ltr" : "rtl"}>
+    <section dir={checkLang ? "ltr" : "rtl"}>
       <div className="  bg-LightDark">
         <div style={{ overflow: "hidden" }}>
           <svg
@@ -31,15 +32,18 @@ export const AskedQuestionsSection = () => {
         </div>
         <div className="container-fluid">
           <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">
-            <Row>
-              <Col lg="4" className="text-light p-4 p-lg-0">
+            <Row className=' justify-content-center '>
+              <Col lg="4" className="text-light  p-4 p-lg-0 askedImg d-flex flex-column align-items-center ">
+                <div >
                 <h3>{trans("askedQue.title")}</h3>
                 <p className="fs-6">{trans("askedQue.descrip")}</p>
                 <button className="btn btn-light">
                   {trans("askedQue.button")}
                 </button>
+                </div>
+                  <img src={charc} alt="Charcater" loading="lazy" />
               </Col>
-              <Col>
+              <Col className=" d-flex justify-content-center ">
                 <Accordion defaultActiveKey="0" flush>
                   {trans("askedQue.list", { returnObjects: true }).map(
                     (item, index) => (
@@ -83,6 +87,6 @@ export const AskedQuestionsSection = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

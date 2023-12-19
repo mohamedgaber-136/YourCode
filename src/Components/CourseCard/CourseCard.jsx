@@ -16,7 +16,7 @@ const CourseCard = ({ course }) => {
     <Col
       lg="4"
       md="6"
-      className="p-2 shadow-lg rounded-2 cardContainer"
+      className="p-2  rounded-2 cardContainer"
       data-aos="zoom-in"
     >
       <div

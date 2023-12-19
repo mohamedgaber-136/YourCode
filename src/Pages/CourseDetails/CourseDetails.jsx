@@ -3,7 +3,7 @@ import { useLocation, useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import { GlobalContext } from "../../Context/GlobalContext";
 import { DetailsCard } from "../../Components/DetailsCard/DetailsCard";
-
+import './CourseDetails.css'
 export const CourseDetails = () => {
   const { title } = useParams();
   const { state } = useLocation();
@@ -78,14 +78,14 @@ export const CourseDetails = () => {
           <h4 className="col-md-3">{course.title}</h4>
           <p className="px-2 fontSize14">{course.description}</p>
         </div>
-        <div className="d-flex align-items-center justify-content-center">
+        <div className="d-flex align-items-center justify-content-center courseDetailsImg">
           <img
             src={course.image}
-            width={"95%"}
+            width={"50%"}
             className="rounded-3 shadow"
           />
         </div>
-        <div className="py-5 d-flex flex-wrap align-items-center justify-content-center">
+        <div className="py-5 d-flex CourseDetailCardParent flex-wrap align-items-center justify-content-center">
           {detailsList.map((item) => (
             <DetailsCard key={item.id} details={item} />
           ))}

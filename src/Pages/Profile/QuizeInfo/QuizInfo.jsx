@@ -1,9 +1,10 @@
-import { Line } from 'react-chartjs-2';
+import {  Line } from 'react-chartjs-2';
 import { useOutletContext } from "react-router-dom";
 import { Chart, registerables } from 'chart.js';
+import { Doughnuts } from './Doughnut';
 export const QuizInfo = () => {
   Chart.register(...registerables);
-  const questionData = useOutletContext()
+ const questionData = useOutletContext()
   const data = {
     labels: questionData.map((question, index) => `day ${index + 1}`),
     datasets: [
@@ -20,13 +21,13 @@ export const QuizInfo = () => {
     ],
   };
 
-  const options= {
-   }
-  
 
-  return (
+
+  return (<div className=' w-100 d-flex justify-content-center flex-column align-items-center flex-md-row'>
+
+<div className="w-75">
     <Line data={data} options={{
-   
+      
       scales: {
         y: {
             suggestedMin: 0,
@@ -37,12 +38,12 @@ export const QuizInfo = () => {
         legend: {
           display: true
         },
-        title:{
-          text:`(TotalQuestions ${questionData.map((a)=>a.total).reduce((a,b)=>a+b)} )  (wrong ${questionData.map((a)=>a.wrong).reduce((a,b)=>a+b)})`,
-          display:true
-        }
+       
      
       }
     }} plugins={['wavyLines']} />
+    </div>
+    <Doughnuts questionData={questionData}/>
+      </div>
   )
 }

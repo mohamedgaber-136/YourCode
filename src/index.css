@@ -1,7 +1,13 @@
 * {
   font-family: "Merriweather", serif;
 }
+body{
+  scroll-snap-type: y mandatory;
 
+}
+section{
+scroll-snap-align: start;
+}
 .mainSpacer {
   padding: 60px;
 }

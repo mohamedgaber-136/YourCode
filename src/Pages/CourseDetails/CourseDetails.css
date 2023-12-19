@@ -1,3 +1,6 @@
 .textLighter{
     font-size: 14px;
 }
+.courseDetailsImg img {
+    object-fit: cover;
+}

@@ -9,13 +9,6 @@ import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
 import { Helmet } from "react-helmet";
 
 function App() {
- 
-  return (<>
-<Helmet>
-        <title>YourCode</title>
-        <meta name="description" content="Helmet application" />
-    </Helmet>
-
   const { lang } = useContext(GlobalContext);
   console.log(lang, "lang");
   console.log("lang");
@@ -28,14 +21,12 @@ function App() {
       });
     };
   }, []);
-  return (
-    <>
-      <Helmet>
+  return (<>
+<Helmet>
         <title>YourCode</title>
         <meta name="description" content="Helmet application" />
-      </Helmet>
-
-      <div className="bg-light">
+    </Helmet>
+      <div className="">
         <Header />
         <CoursesIcons />
         <BenefitsSection />

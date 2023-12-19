@@ -7,15 +7,12 @@ export const CheckNavBar = () => {
   let [showNavBar, setShowNavBar] = useState(true);
   console.log(location.pathname,'pathName')
   useEffect(() => {
-    switch (location.pathname) {
-      case "/":
-        setShowNavBar(true);
-        break;
-      default:
-        setShowNavBar(false);
-    }
+   if((location.pathname=='/')||(location.pathname.includes('Explore')||location.pathname.includes('CourseDetails'))){
+    setShowNavBar(true)
+   }else{
+    setShowNavBar(false)
+   }
   });
-  console.log(showNavBar,'NAv')
   return (
 <>
 {

@@ -2,7 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { BenefitCard } from "../BenefitCard/BenefitCard";
 import Container from "react-bootstrap/Container";
 import SectionLabel from "../SectionLabel/SectionLabel";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./BenefitSection.css";
 import { GlobalContext } from "../../Context/GlobalContext";
 export const BenefitsSection = () => {
@@ -51,9 +52,11 @@ export const BenefitsSection = () => {
         "Learn from industry experts who have hands-on experience in design and development.",
     },
   ];
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div dir={checkLang ? "ltr" : "rtl"}>
+    <section dir={checkLang ? "ltr" : "rtl"}>
       <div className=" bg-LightDark">
         <div style={{ overflow: "hidden" }}>
           <svg
@@ -81,7 +84,7 @@ export const BenefitsSection = () => {
             buttonText={trans("label.button")}
             buttonColor={"light"}
           />
-          <div className="d-flex flex-wrap justify-content-center align-items-center">
+          <div className="d-flex benefitParent flex-wrap justify-content-center align-items-center" data-aos="fade-down">
             {trans("benefits.list", { returnObjects: true }).map(
               (item, index) => (
                 <BenefitCard
@@ -94,6 +97,6 @@ export const BenefitsSection = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
