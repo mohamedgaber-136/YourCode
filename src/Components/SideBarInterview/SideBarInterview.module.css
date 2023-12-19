@@ -7,8 +7,6 @@
 }
 
 .accordionButton::after {
- 
-
   background-image: var(--bs-accordion-btn-icon) !important;
   background-position: center !important;
   background-size: 80% !important;
@@ -45,4 +43,10 @@
 
 .bgBlue {
   background-color: #5f85db !important;
+}
+
+@media (max-width: 767px) {
+  .sideBarFixed {
+    display: none;
+  }
 }
