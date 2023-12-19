@@ -21,8 +21,10 @@ function App() {
       });
     };
   }, []);
-  return (<>
-<Helmet>
+  return (
+  <>
+
+      <Helmet>
         <title>YourCode</title>
         <meta name="description" content="Helmet application" />
     </Helmet>
