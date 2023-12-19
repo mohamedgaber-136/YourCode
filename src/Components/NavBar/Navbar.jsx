@@ -58,13 +58,19 @@ const NavbarComp = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="gap-lg-5 gap-2">
             <div className="d-flex  justify-content-center gap-5">
-              <Nav.Link className={`${scrolled?'text-dark':'text-white'}`} onClick={() => navigate("/")}>
+              <Nav.Link
+                className={`${scrolled ? "text-dark" : "text-white"}`}
+                onClick={() => navigate("/")}
+              >
                 {trans("Navbar.Home")}
               </Nav.Link>
-              <Nav.Link className={`${scrolled?'text-dark':'text-white'}`}>
+              <Nav.Link
+                className={`${scrolled ? "text-dark" : "text-white"}`}
+                onClick={() => navigate("/Interview")}
+              >
                 {trans("Navbar.Interview")}
               </Nav.Link>
-              <Nav.Link  className={`${scrolled?'text-dark':'text-white'}`}>
+              <Nav.Link className={`${scrolled ? "text-dark" : "text-white"}`}>
                 {trans("Navbar.Tracks")}
               </Nav.Link>
             </div>
@@ -77,7 +83,7 @@ const NavbarComp = () => {
               <LoginButton
                 text={trans("Navbar.LOGIN")}
                 NavigDestination={"/Login"}
-                />
+              />
               <LoginButton
                 text={trans("Navbar.Test")}
                 color={"#F4F27E"}
@@ -88,7 +94,7 @@ const NavbarComp = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <DarkMode/>
+      <DarkMode />
     </div>
   );
 };
