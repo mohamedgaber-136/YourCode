@@ -34,7 +34,7 @@ function App() {
         <BenefitsSection />
         <OurCoursesSection />
         <AskedQuestionsSection />
-        <ModalForSignIn/>
+        {/* <ModalForSignIn/> */}
       </div>
     </>
   );

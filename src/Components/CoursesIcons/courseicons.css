@@ -4,13 +4,17 @@
     object-fit: cover;
 }
 .coursesIconsParent{
-    background-color: #030303 !important;
+    background-color: rgb(255, 255, 255) !important;
     height: 150px; 
-    /* position: absolute;
-    top: 130%; */
+    position: absolute;
+    top: -75px;
+ 
 }
 .coursesIconsGrand{
-    margin: 0p 150px !important;
+    /* margin: 0p 150px !important; */
+    padding: 150px 0px !important;
+    background-color: rgb(255, 255, 255);
+    position: relative;
 }
 .videoParent{
     width: 75%;
@@ -38,4 +42,10 @@
 .VideoSecImg img{
     width: 500px !important;
 
+}
+.iconsBorder{
+border-right: 1px solid lightgray;
+}
+.iconsBorder:last-child{
+    border-right: none;
 }
