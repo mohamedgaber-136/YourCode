@@ -1,11 +1,33 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import { GlobalContext } from "../../Context/GlobalContext";
 import { DetailsCard } from "../../Components/DetailsCard/DetailsCard";
-import './CourseDetails.css'
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent, {
+  timelineContentClasses,
+} from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+
+import {
+  RiNumber1,
+  RiNumber2,
+  RiNumber3,
+  RiNumber4,
+  RiNumber5,
+  RiNumber6,
+  RiNumber7,
+  RiNumber8,
+  RiNumber9,
+} from "react-icons/ri";
+
+import styles from "./CourseDetails.module.css";
+
 export const CourseDetails = () => {
-  const { title } = useParams();
   const { state } = useLocation();
   const { trans, checkLang } = useContext(GlobalContext);
   useEffect(() => {
@@ -70,27 +92,122 @@ export const CourseDetails = () => {
     },
   ];
 
+  const numbers = [
+    <RiNumber1 />,
+    <RiNumber2 />,
+    <RiNumber3 />,
+    <RiNumber4 />,
+    <RiNumber5 />,
+    <RiNumber6 />,
+    <RiNumber7 />,
+    <RiNumber8 />,
+    <RiNumber9 />,
+  ];
+
+  const [timelinePosition, setTimelinePosition] = useState("alternate");
+
+  window.addEventListener("resize", () => {
+    console.log(document.documentElement.clientWidth, "width");
+
+    if (document.documentElement.clientWidth <= 576) {
+      setTimelinePosition("right");
+    } else {
+      setTimelinePosition("alternate");
+    }
+  });
+
   return (
-    <div dir={checkLang ? "ltr" : "rtl"} className="bg-light py-3">
-      <Container>
-        <div style={{ height: "100px" }} />
-        <div className="d-flex flex-md-row flex-column gap-3 align-items-md-center py-5 p-2">
-          <h4 className="col-md-3">{course.title}</h4>
+    <div dir={checkLang ? "ltr" : "rtl"} className="bg-light">
+      <div className={styles.head}>
+        <h3 className="p-2 mt-auto">{course.title}</h3>
+        <p className="px-2 fontSize14 ">{course.description}</p>
+        <div className="d-flex align-items-center justify-content-center p-5">
+          <img src={course.image} width={"80%"} className="rounded-3" />
+        </div>
+      </div>
+
+      <div className="bg-secondary-subtle"></div>
+
+      <Container className="py-3">
+        <Timeline
+          position={timelinePosition}
+          // position="alternate"
+          // sx={{
+          //   [`& .${timelineContentClasses.root}`]: {
+
+          //   },
+          // }}
+        >
+          {detailsList.map((detail, index) => (
+            <TimelineItem key={detail.id}>
+              <TimelineOppositeContent
+                // sx={{ m: "auto 0" }}
+                align="center"
+                variant="body2"
+                color="text.secondary"
+              >
+                {`Step ${index + 1}`}
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                {/* {index != 0 ? (
+                  <TimelineConnector />
+                ) : (
+                  <TimelineConnector className="bg-transparent" />
+                )} */}
+                <TimelineDot variant="outlined">
+                  {/* <AiOutlineNumber /> */}
+                  {/* {numbers[index]} */}
+                  {/* <div
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      backgroundColor: "cornflowerblue",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin:'10px 0',
+
+                    }}
+                  >
+                    {index + 1}
+                  </div> */}
+                </TimelineDot>
+                <TimelineConnector />
+                {/* {index != detailsList.length - 1 ? (
+                  <TimelineConnector />
+                ) : (
+                  <TimelineConnector className="bg-transparent" />
+                )} */}
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <DetailsCard details={detail} key={`card-${index}`} />
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </Container>
+
+      {/* <Container className="border">
+        <div className="vh-100 d-flex flex-column gap-3 align-items-center ">
+          <h3>{course.title}</h3>
           <p className="px-2 fontSize14">{course.description}</p>
+          <div className="d-flex align-items-center justify-content-center">
+            <img
+              src={course.image}
+              width={"70%"}
+              className="rounded-3 shadow"
+            />
+          </div>
         </div>
-        <div className="d-flex align-items-center justify-content-center courseDetailsImg">
-          <img
-            src={course.image}
-            width={"50%"}
-            className="rounded-3 shadow"
-          />
-        </div>
+
         <div className="py-5 d-flex CourseDetailCardParent flex-wrap align-items-center justify-content-center">
           {detailsList.map((item) => (
             <DetailsCard key={item.id} details={item} />
           ))}
         </div>
-      </Container>
+      </Container> */}
     </div>
   );
 };
