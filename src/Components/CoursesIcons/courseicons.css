@@ -39,8 +39,12 @@
     justify-content: center;
     align-items: center;
 }
+.VideoSecImg{
+    width: 30% ;
+    overflow: hidden;
+}
 .VideoSecImg img{
-    width: 500px !important;
+    width: 100% !important;
 
 }
 .iconsBorder{

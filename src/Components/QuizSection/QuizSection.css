@@ -1,0 +1,39 @@
+.QuizSectionParent{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 100px 0;
+}
+.QuizChild{
+    width: 800px;
+    height: 700px;
+    border: 1px solid lightgrey ;
+    border-radius: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-image: url('/src/assets/21.12.2023_00.01.33_REC.png');
+    background-position: center;
+    background-size: cover;
+}
+.QuizChild img{
+width: 100%;
+}
+.righImg,.LeftImg{
+    position: relative;
+}
+.righImg  {
+position: absolute;
+width: 400px !important;
+left: 70% !important;}
+.LeftImg  {
+position: absolute;
+width: 400px !important;
+left:5%;
+}
+@media(max-width:767px){
+    .QuizChild{
+        width: 80%;
+    }
+    .righImg img{
+left: 430px;
+width: 300px !important
+    }
+}

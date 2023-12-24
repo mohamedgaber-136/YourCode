@@ -7,6 +7,7 @@ import { useContext, useEffect } from "react";
 import { GlobalContext } from "./Context/GlobalContext";
 import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
 import { Helmet } from "react-helmet";
+import { QuizSection } from "./Components/QuizSection/QuizSection";
 
 function App() {
   const { lang } = useContext(GlobalContext);
@@ -34,6 +35,7 @@ function App() {
         <BenefitsSection />
         <OurCoursesSection />
         <AskedQuestionsSection />
+        <QuizSection/>
         {/* <ModalForSignIn/> */}
       </div>
     </>
