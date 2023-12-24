@@ -9,9 +9,9 @@ export const DetailsCard = ({ details }) => {
   }, []);
 
   return (
-    <div className="col-md-6 col-10 p-2" data-aos="zoom-in">
-      <div className="bg-body rounded p-3 d-flex flex-column align-content-center justify-content-center shadow-sm ">
-        <h3 className="fw-bolder align-self-end">{details.id}</h3>
+    <div className="w-100" data-aos="zoom-in">
+      <div className="bg-body rounded p-3 d-flex flex-column align-content-center justify-content-center shadow-sm text-left">
+        {/* <h3 className="fw-bolder align-self-end">{details.id}</h3> */}
         <h6 className="fw-bolder">{details.title}</h6>
         <div className="d-flex flex-column gap-2 py-2">
           {details.list.map((item, index) => (

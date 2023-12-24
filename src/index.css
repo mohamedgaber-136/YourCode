@@ -1,12 +1,11 @@
 * {
   font-family: "Merriweather", serif;
 }
-body{
+body {
   scroll-snap-type: y mandatory;
-
 }
-section{
-scroll-snap-align: start;
+section {
+  scroll-snap-align: start;
 }
 .mainSpacer {
   padding: 60px;
@@ -40,16 +39,50 @@ scroll-snap-align: start;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;}
-  .fontSize14 {
-    font-size: 14px !important;
-  }
+  background: #fff;
+}
+.fontSize14 {
+  font-size: 14px !important;
+}
+
+.fontSize12 {
+  font-size: 12px !important;
+}
+
+.fontSize10 {
+  font-size: 10px !important;
+}
+
+/* timeline reverse content */
+.MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root {
+  text-align: left !important;
+  /* display: block; */
+  /* direction: rtl !important; */
+}
+
+/* .MuiTimelineOppositeContent-root { */
+/* flex: 1 !important; */
+
+/* width: 100px !important; */
+/* flex: 0.2; */
+/* display: flex; */
+/* } */
+
+/* .MuiTimelineContent-root { */
+/* flex: 1 !important; */
+/* flex: auto !important; */
+/* flex: 100% !important; */
+/* background-color: blue !important; */
+/* } */
+
+@media (max-width: 576px) {
+  /* .MuiTimelineItem-positionAlternate {
+    background-color: red;
   
-  .fontSize12 {
-    font-size: 12px !important;
+  } */
+
+  .MuiTimelineContent-root {
+    flex: 100% !important;
+    /* background-color: aqua !important; */
   }
-  
-  .fontSize10 {
-    font-size: 10px !important;
-  }
-  
+}
