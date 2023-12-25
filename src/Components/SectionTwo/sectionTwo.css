@@ -1,0 +1,72 @@
+.SectionTwoParent {
+    background-image: linear-gradient(0deg, transparent 24px, rgb(233, 233, 233) 25px), linear-gradient(90deg, transparent 24px, rgb(233, 233, 233) 25px);
+    background-size: 25px 25px;
+    position: relative;
+}
+
+.LftSideImg {
+    position: relative;
+    left: -80px;
+}
+.LftSideImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rightSideContent,
+.LftSideImg {
+    width: 50%;
+}
+
+@media(max-width:768px) {
+
+    .rightSideContent,
+    .LftSideImg {
+        width: 100%;
+    }
+
+    .LftSideImg {
+        position: static;
+        left: 0;
+    }
+
+    .squareImgDown {
+        bottom: -120px !important;
+        z-index: -1;
+    }
+.SectionTwoParent{
+    overflow: hidden    ;
+}
+
+}
+
+.squareImg {
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+}
+
+.squareImgDown {
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+}
+#child,#childtwo{
+    width: 100% !important;
+    overflow: hidden;
+}
+#child{
+    border-radius: 0 0 20px 20px;
+    
+}
+#childtwo{
+    border-radius: 20px 20px 0 0;
+
+}
+#child img,#childtwo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}

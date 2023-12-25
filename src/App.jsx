@@ -8,6 +8,8 @@ import { GlobalContext } from "./Context/GlobalContext";
 import { ModalForSignIn } from "./Components/ModalForSignIn/ModalForSignIn";
 import { Helmet } from "react-helmet";
 import { QuizSection } from "./Components/QuizSection/QuizSection";
+import { SectionTwo } from "./Components/SectionTwo/SectionTwo";
+import { SectionFour } from "./Components/SectionFour/SectionFour";
 
 function App() {
   const { lang } = useContext(GlobalContext);
@@ -33,7 +35,9 @@ function App() {
         <Header />
         <CoursesIcons />
         <BenefitsSection />
-        <OurCoursesSection />
+        {/* <OurCoursesSection /> */}
+        <SectionTwo/>
+        <SectionFour/>
         <AskedQuestionsSection />
         <QuizSection/>
         {/* <ModalForSignIn/> */}

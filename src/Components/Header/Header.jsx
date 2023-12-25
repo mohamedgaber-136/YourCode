@@ -1,24 +1,31 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 import "./header.css";
 import { GlobalContext } from "../../Context/GlobalContext";
+import charc from './Leonardo_Diffusion_XL_Frontend_developer_1.jpg'
+import bgImg from './Leonardo_Diffusion_XL_Frontend_developers_2.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const Header = () => {
+  useEffect(()=>{
+    AOS.init()
+  },[])
   const { trans, checkLang } = useContext(GlobalContext);
   return (
     <>
-      <header className="  d-flex justify-content-center align-items-center headerParent ">
+      <header className=" flex-md-row d-flex justify-content-center px-lg-5 gap-3 flex-column align-items-center headerParent ">
         <div className="headerChild">
           <div
             dir={checkLang ? "ltr" : "rtl"}
-            className="d-flex justify-content-center align-items-center gap-3 "
+            className="d-flex justify-content-center flex-column align-items-center gap-1 "
           >
-            <i className="fa-solid fa-bolt  bg-white p-2 rounded-circle"></i>
-            <h2 className="m-0 text-center text-white">
+            <i className="fa-solid fa-bolt  bg-dark p-2 rounded-circle"></i>
+            <h2 className="m-0 text-center text-dark">
               <span className="textUnlock">{trans("Header.colored")}</span>{" "}
               {trans("Header.first")}
             </h2>
           </div>
-          <h5 className="m-0 text-center text-white">{trans("Header.second")}</h5>
-          <h6 className="m-0 text-center text-white">{trans("Header.third")} </h6>
+          <h5 className="m-0 text-center text-dark">{trans("Header.second")}</h5>
+          <h6 className="m-0 text-center text-dark">{trans("Header.third")} </h6>
           <div className="d-flex">
             <button className="btn  buttonsWithoutBorderRight">
               {trans("Header.explore")}
@@ -28,6 +35,16 @@ export const Header = () => {
             </button>
           </div>
         </div>
+        <div className="headerChildImg  w-100 h-50 d-flex justify-content-center align-items-center  " data-aos="fade-left" data-aos-once="true" data-aos-duration="2000" data-aos-delay="500">
+          <div className=" w-75 h-100  HeaderLftSide">
+            <img src={charc} alt="charc" />
+          </div>
+          <div className="secondImg">
+            <img src={bgImg} alt="Bgimg" />
+          </div>
+        </div>
+        <div className="SkewLine"></div>
+        <div className="SkewLineTwo"></div>
       </header>
     </>
   );

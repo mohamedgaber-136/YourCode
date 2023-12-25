@@ -1,35 +1,138 @@
-.headerParent .headerChild{ 
+.headerParent .headerChild {
     display: flex;
     width: 965px;
     flex-direction: column;
     align-items: center;
-    gap: 6px;    
+    gap: 6px;
 }
 
 
-.buttonsWithoutBorderRight{
-    border-radius:15px 0 0 15px !important ;
-    background-color:  #90B8F8 !important;
+.buttonsWithoutBorderRight {
+    border-radius: 15px 0 0 15px !important;
+    background-color: #90B8F8 !important;
 }
-.buttonsWithoutBorderLeft{
-    border-radius:0px 15px 15px 0px !important ;
+
+.buttonsWithoutBorderLeft {
+    border-radius: 0px 15px 15px 0px !important;
 }
-@media (max-width:320px){
-.head .headerChild{
-    width: 357px;
+
+@media (max-width:320px) {
+    .head .headerChild {
+        width: 357px;
+    }
+
+    .headerChild h2,
+    .headerChild h5,
+    .headerChild h6 {
+        font-size: 16px !important;
+    }
 }
-.headerChild h2,.headerChild h5,.headerChild h6{
-    font-size: 16px !important;
-}
-}
-.textUnlock,.fa-bolt{
+
+.textUnlock,
+.fa-bolt {
     color: #90B8F8;
 }
-header{
+
+.textUnlock {
+    font-size: 50px !important;
+}
+
+.headerChild h2 {
+    font-size: 4vw;
+    font-weight: 800;
+}
+
+header {
     height: 750px;
-    background:linear-gradient(rgba(88, 86, 86, 0.8),rgba(0,0,0,0.8)),     url('./pexels-julia-m-cameron-4145354.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 50px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.SkewLine {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    width: 120px;
+    height: 300px;
+    z-index: -1;
+    background-color: goldenrod;
+    transform: skew(30deg);
+    animation: ColorBg 0.2s ease-out 2.8s 1  forwards ;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 0px, 0px 0px);
+}
+
+.SkewLineTwo {
+    background-color: goldenrod;
+    z-index: -1;
+    bottom: 50px;
+    right: -100px;
+    width: 120px;
+    height: 500px;
+    transform: skew(-30deg);
+    position: absolute;
+    clip-path: polygon(0px 100%, 100% 100%, 100% 100%, 0px 100%);
+    animation: 0.65s cubic-bezier(0.01, 0.23, 0.18, 0.96) 3.4s 1 normal forwards running kLZmTQ;
+
+}
+
+@keyframes ColorBg {
+    100% {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+}
+@keyframes kLZmTQ {
+    100% {
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+}
+
+@media(max-width:525px) {
+    .headerChild h2 {
+        font-size: 4vw;
+    }
+
+    .textUnlock {
+        font-size: 4vw !important;
+    }
+
+    .headerChild h5 {
+        font-size: 4vw;
+    }
+}
+
+.SectionTwoParent {
+    overflow: hidden;
+}
+.HeaderLftSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px !important;
+}
+.headerChildImg{
+    position: relative;
+}
+.secondImg{
+    border-radius: 20px !important;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 0;
+    overflow: hidden;
+}
+.secondImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media(max-width:767px){
+    .secondImg{
+        left: 50%;
+        bottom: -15%;
+        transform: translateX(-50%);
+    }
 }

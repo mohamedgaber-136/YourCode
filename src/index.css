@@ -3,6 +3,7 @@
 }
 body {
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 section {
   scroll-snap-align: start;

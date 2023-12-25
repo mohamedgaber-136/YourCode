@@ -11,8 +11,7 @@
  
 }
 .coursesIconsGrand{
-    /* margin: 0p 150px !important; */
-    padding: 150px 0px !important;
+    padding: 100px 0px !important;
     background-color: rgb(255, 255, 255);
     position: relative;
 }
@@ -26,7 +25,7 @@
 .videoParent video{
     border-radius: 10px;
     width: 100%;
-    cursor: pointer;
+    height: 100%;
     object-fit: cover;
 }
 .fa-circle-play{
@@ -53,3 +52,20 @@ border-right: 1px solid lightgray;
 .iconsBorder:last-child{
     border-right: none;
 }
+.ImgVideoParent{
+    height: 100%;
+}
+.ImgVideoParent img {
+    height: 100%;
+    object-fit: cover;
+}
+ .ImgAndVideoContainer{
+    position: relative;
+}
+.svgsImg{
+    position: absolute;
+    top: 0px ;
+    width: 100px;
+    height: 100px;
+    left: 0;
+} 

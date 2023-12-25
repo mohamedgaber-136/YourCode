@@ -11,19 +11,7 @@ const NavbarComp = () => {
   const { checkLang, handleLang, trans } = useContext(GlobalContext);
   let navigate = useNavigate();
   let [changeBar, setChangeBar] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 500;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
+
 
   const changeBarFunc = () => {
     setChangeBar(!changeBar);
@@ -31,9 +19,7 @@ const NavbarComp = () => {
   };
   return (
     <div
-      className={`   d-flex justify-content-center  ${
-        scrolled ? `glassBackGroun` : "glassBackGroungDark"
-      } fixed-top`}
+      className={`   d-flex justify-content-center bg-white fixed-top`}
     >
       <Navbar
         expand="md"
@@ -59,25 +45,25 @@ const NavbarComp = () => {
           <Nav className="gap-lg-5 gap-2">
             <div className="d-flex  justify-content-center gap-5">
               <Nav.Link
-                className={`${scrolled ? "text-dark" : "text-white"}`}
+                className= "text-dark" 
                 onClick={() => navigate("/")}
               >
                 {trans("Navbar.Home")}
               </Nav.Link>
               <Nav.Link
-                className={`${scrolled ? "text-dark" : "text-white"}`}
+                className='text-dark'
                 onClick={() => navigate("/Interview")}
               >
                 {trans("Navbar.Interview")}
               </Nav.Link>
-              <Nav.Link className={`${scrolled ? "text-dark" : "text-white"}`}>
+              <Nav.Link className= "text-dark"  >
                 {trans("Navbar.Tracks")}
               </Nav.Link>
             </div>
             <div className=" justify-content-center align-items-center gap-3 d-flex ">
               <LoginButton
                 text={trans("Navbar.SignUp")}
-                color={"#750E21"}
+                color={"#00f"}
                 NavigDestination={"/SignUp"}
               />
               <LoginButton
@@ -86,8 +72,8 @@ const NavbarComp = () => {
               />
               <LoginButton
                 text={trans("Navbar.Test")}
-                color={"#F4F27E"}
-                fontColor={"black"}
+                color={"#00f"}
+                fontColor={"white"}
                 NavigDestination={"/MainProfile/profileData"}
               />
             </div>
