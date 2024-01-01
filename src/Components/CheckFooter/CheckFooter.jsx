@@ -14,7 +14,6 @@ export const CheckFooter = () => {
           setShowFooter(false);
         }
       });
-      console.log(ShowFooter)
   return (
     <div >
       {

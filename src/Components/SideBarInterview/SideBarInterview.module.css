@@ -32,13 +32,15 @@
 .sideBarPos {
   position: relative;
   top: 100px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .sideBarFixed {
   position: fixed;
   background-color: black;
   left: 0;
   width: 30%;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .bgBlue {

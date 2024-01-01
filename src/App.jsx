@@ -40,7 +40,7 @@ function App() {
         <SectionFour/>
         <AskedQuestionsSection />
         <QuizSection/>
-        {/* <ModalForSignIn/> */}
+        {/* <ModalForSignIn/> */} 
       </div>
     </>
   );

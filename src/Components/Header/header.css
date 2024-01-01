@@ -55,7 +55,7 @@ header {
     bottom: 50px;
     right: 150px;
     width: 120px;
-    height: 300px;
+    height: 35vh;
     z-index: -1;
     background-color: goldenrod;
     transform: skew(30deg);
@@ -69,7 +69,7 @@ header {
     bottom: 50px;
     right: -100px;
     width: 120px;
-    height: 500px;
+    height: 55vh;
     transform: skew(-30deg);
     position: absolute;
     clip-path: polygon(0px 100%, 100% 100%, 100% 100%, 0px 100%);
@@ -99,6 +99,9 @@ header {
 
     .headerChild h5 {
         font-size: 4vw;
+    }
+    .headerChild h6 {
+        font-size: 3.5vw;
     }
 }
 
