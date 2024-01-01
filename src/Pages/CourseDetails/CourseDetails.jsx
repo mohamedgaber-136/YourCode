@@ -118,13 +118,33 @@ export const CourseDetails = () => {
 
   return (
     <div dir={checkLang ? "ltr" : "rtl"} className="bg-light">
-      <div className={styles.head}>
+      <Container className="py-5 d-flex align-items-center justify-content-center">
+        <div className="w-50 position-relative d-flex align-items-center justify-content-center">
+          <img src="/images/blobShap.svg" width={"90%"} />
+          <img
+            src={course.image}
+            width={"90%"}
+            className="rounded-3 position-absolute"
+            style={{
+              maskSize: "cover",
+              maskPosition: "center",
+              maskImage: "url(/images/blobShap.svg)",
+              maskRepeat: "no-repeat",
+            }}
+          />
+        </div>
+        <div className="w-50 p-2">
+          <h3 className=" mt-auto">{course.title}</h3>
+          <p className="fontSize14 ">{course.description}</p>
+        </div>
+      </Container>
+      {/* <div className={styles.head}>
         <h3 className="p-2 mt-auto">{course.title}</h3>
         <p className="px-2 fontSize14 ">{course.description}</p>
         <div className="d-flex align-items-center justify-content-center p-5">
           <img src={course.image} width={"80%"} className="rounded-3" />
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-secondary-subtle"></div>
 

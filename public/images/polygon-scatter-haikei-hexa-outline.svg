@@ -1,0 +1,36 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+	<g>
+		<g transform="translate(840 119)">
+			<path d="M0 -114.9L89.9 -71.7L112.1 25.6L49.9 103.6L-49.9 103.6L-112.1 25.6L-89.9 -71.7Z" fill="none" stroke="#90b8f8a2" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(681 580)">
+			<path d="M0 -50L39.1 -31.2L48.7 11.1L21.7 45L-21.7 45L-48.7 11.1L-39.1 -31.2Z" fill="none" stroke="#90b8f8a2" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(388 353)">
+			<path d="M0 -72L56.3 -44.9L70.2 16L31.2 64.9L-31.2 64.9L-70.2 16L-56.3 -44.9Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(181 242)">
+			<path d="M0 -93L72.7 -58L90.7 20.7L40.4 83.8L-40.4 83.8L-90.7 20.7L-72.7 -58Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(446 76)">
+			<path d="M0 -69L53.9 -43L67.3 15.4L29.9 62.2L-29.9 62.2L-67.3 15.4L-53.9 -43Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(99 527)">
+			<path d="M0 -66L51.6 -41.2L64.3 14.7L28.6 59.5L-28.6 59.5L-64.3 14.7L-51.6 -41.2Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(92 4)">
+			<path d="M0 -35L27.4 -21.8L34.1 7.8L15.2 31.5L-15.2 31.5L-34.1 7.8L-27.4 -21.8Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+		<g transform="translate(660 263)">
+			<path d="M0 -84L65.7 -52.4L81.9 18.7L36.4 75.7L-36.4 75.7L-81.9 18.7L-65.7 -52.4Z" stroke="#90b8f8a2" fill="none" stroke-width="5">
+			</path>
+		</g>
+	</g>
+</svg>

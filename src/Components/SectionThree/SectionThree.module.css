@@ -1,0 +1,35 @@
+.vLineAnimate {
+  /* animation: 0.5s cubic-bezier(0.56, 0, 0.39, 0.99) 0s 1 normal forwards running
+    kIVrSE; */
+
+  /* animation: 5s cubic-bezier(0.56, 0, 0.39, 0.99) 2s infinite normal forwards
+    running showLine; */
+
+  animation: 3s cubic-bezier(0.56, 0, 0.39, 0.99) 2s 1 normal both running
+    showLine;
+}
+
+@keyframes showLine {
+  0% {
+    stroke-dasharray: 0 var(--stroke-path-length);
+    /* opacity: 0; */
+  }
+  100% {
+    stroke-dasharray: var(--stroke-path-length) var(--stroke-path-length);
+    /* opacity: 1; */
+  }
+}
+.vLineDiv {
+  /* w-100 position-absolute end-0 */
+
+  position: absolute;
+  width: 100%;
+
+  /* top: 1%; */
+  /* left: 0px; */
+}
+@keyframes kIVrSE {
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -1,11 +1,14 @@
 .accordion-button {
   font-size: 12px !important;
   font-weight: 800 !important;
+
+  --bs-accordion-btn-icon: none !important;
+
 }
 .askedImg img {
   width: 100%;
   object-fit: cover;
-  height: 600px; 
+  height: 600px;
 }
 .accordion-body {
   font-size: 12px !important;
@@ -19,13 +22,17 @@
   }
 }
 .accordion-button::after {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  /* --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important; */
+  --bs-accordion-btn-icon: none !important;
+  
+  display: none;
 
-  background-image: url(../../assets/addIcon.svg) !important;
-  background-position: center !important;
-  border: 1px solid lightgray !important;
-  border-radius: 5px !important;
-  padding: 10px !important;
+  /* background-image: url(../../assets/addIcon.svg) !important; */
+  /* background-position: center !important; */
+  /* border: 1px solid lightgray !important; */
+  /* border-radius: 5px !important; */
+  /* padding: 10px !important; */
+
   /* margin-left: auto !important; */
   /* margin-right: auto !important; */
   /* change margin based on direction */
@@ -33,6 +40,43 @@
 
 .accordion-button:not(.collapsed) {
   color: black !important;
-  background-color: #5F85DB !important;
+  background-color: #5f85db !important;
   box-shadow: none !important;
+}
+
+.iconBox {
+  background-image: initial;
+
+  position: relative;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 8px; */
+  /* background-color: #353941; */
+
+  margin-left: auto;
+}
+
+.pinSvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+}
+
+.pinSvg path {
+  fill: #353941;
+  transform-origin: left bottom;
+  animation: 2s ease-in-out 0s infinite normal none running translateIcon;
+}
+
+@keyframes translateIcon {
+  0%,
+  100% {
+    transform: translateX(-5%) rotate(-15deg);
+  }
+  50% {
+    transform: translateX(20%) rotate(-5deg);
+  }
 }

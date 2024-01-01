@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Accordion from "react-bootstrap/Accordion";
-import charc from './3d-character-guy-png.webp'
+import charc from "./3d-character-guy-png.webp";
 import "./AskedQuestion.css";
 import { GlobalContext } from "../../Context/GlobalContext";
 
@@ -12,7 +12,7 @@ export const AskedQuestionsSection = () => {
   return (
     <section dir={checkLang ? "ltr" : "rtl"}>
       <div className="  bg-LightDark">
-        <div style={{ overflow: "hidden" }}>
+        {/* <div style={{ overflow: "hidden" }}>
           <svg
             preserveAspectRatio="none"
             viewBox="0 0 1200 120"
@@ -29,19 +29,22 @@ export const AskedQuestionsSection = () => {
             />
             <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
           </svg>
-        </div>
+        </div> */}
         <div className="container-fluid">
           <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">
-            <Row className=' justify-content-center '>
-              <Col lg="4" className="text-light  p-4 p-lg-0 askedImg d-flex flex-column align-items-center ">
-                <div >
-                <h3>{trans("askedQue.title")}</h3>
-                <p className="fs-6">{trans("askedQue.descrip")}</p>
-                <button className="btn btn-light">
-                  {trans("askedQue.button")}
-                </button>
+            <Row className=" justify-content-center ">
+              <Col
+                lg="4"
+                className="text-light  p-4 p-lg-0 askedImg d-flex flex-column align-items-center "
+              >
+                <div>
+                  <h3>{trans("askedQue.title")}</h3>
+                  <p className="fs-6">{trans("askedQue.descrip")}</p>
+                  <button className="btn btn-light">
+                    {trans("askedQue.button")}
+                  </button>
                 </div>
-                  <img src={charc} alt="Charcater" loading="lazy" />
+                <img src={charc} alt="Charcater" loading="lazy" />
               </Col>
               <Col className=" d-flex justify-content-center ">
                 <Accordion defaultActiveKey="0" flush>
@@ -54,6 +57,16 @@ export const AskedQuestionsSection = () => {
                       >
                         <Accordion.Button className="fontSize12 fw-bolder">
                           {item.question}
+
+                          <div className="iconBox">
+                            <svg viewBox="0 0 24 24" className="pinSvg">
+                              <path
+                                d="M0,19.3v4.1C0,23.7,0.3,24,0.7,24h4.1c0.2,0,0.3-0.1,0.5-0.2L19.7,9.3l-5-5L0.2,18.8C0.1,18.9,0,19.1,0,19.3z
+  M23.6,5.4c0.5-0.5,0.5-1.4,0-1.9l-3.1-3.1c-0.5-0.5-1.4-0.5-1.9,0l-2.4,2.4l5,5L23.6,5.4z"
+                                className="PenIcon__Path-sc-df7eee32-2 kZYdRV"
+                              ></path>
+                            </svg>
+                          </div>
                         </Accordion.Button>
                         <Accordion.Body className="fontSize12">
                           {item.answer}
@@ -67,7 +80,7 @@ export const AskedQuestionsSection = () => {
           </Container>
         </div>
       </div>
-      <div style={{ overflow: "hidden" }}>
+      {/* <div style={{ overflow: "hidden" }}>
         <div className="bg-white">
           <svg
             preserveAspectRatio="none"
@@ -86,7 +99,7 @@ export const AskedQuestionsSection = () => {
             <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
           </svg>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

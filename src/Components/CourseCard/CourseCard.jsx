@@ -24,7 +24,11 @@ const CourseCard = ({ course }) => {
       >
         <img src={course.image} width={"100%"} className="rounded-3" />
 
-        <div className="d-flex   flex-sm-row flex-column justify-content-between align-items-center ">
+        <span className="p-1 rounded-2 align-self-end position-absolute bg-light m-2 shadow fontSize12 ">
+          {course.level}
+        </span>
+
+        {/* <div className="d-flex   flex-sm-row flex-column justify-content-between align-items-center ">
           <div className="d-flex gap-1 w-lg-50  -">
             {[1, 2].map((item) => (
               <span
@@ -36,8 +40,7 @@ const CourseCard = ({ course }) => {
             ))}
           </div>
           <div className={styles.boldText}>{course.instructor}</div>
-        </div>
-
+        </div> */}
         <div className="pt-1">
           <h4 className={styles.titleText}>{course.title}</h4>
           <p className={`  m-0 ${styles.coursePara}`}>{course.description}</p>

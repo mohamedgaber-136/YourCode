@@ -1,0 +1,12 @@
+<svg viewBox="0 0 1230 687" class="VLine__Svg-sc-789dc456-0 kPuFVd">
+	<linearGradient id="v-line__gradient-id" gradientUnits="userSpaceOnUse" x1="0" y1="343.5" x2="1230" y2="343.5">
+		<stop offset="0" style="stop-color: rgb(255, 69, 88); --darkreader-inline-stopcolor: #ff4a5c;" data-darkreader-inline-stopcolor="">
+		</stop>
+		<stop offset="1" style="stop-color: rgb(255, 228, 26); --darkreader-inline-stopcolor: #ffe62c;" data-darkreader-inline-stopcolor="">
+		</stop>
+	</linearGradient>
+	<polyline points="65.8,187.9 277.7,537.3 564.6,77 1370,77" class="VLine__LargeStroke-sc-789dc456-1 btFVTN">
+	</polyline>
+	<rect width="1230" height="687" x="0" y="0" class="VLine__MaskLargeStroke-sc-789dc456-2 hWcUkO">
+	</rect>
+</svg>

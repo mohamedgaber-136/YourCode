@@ -10,6 +10,9 @@ import { Helmet } from "react-helmet";
 import { QuizSection } from "./Components/QuizSection/QuizSection";
 import { SectionTwo } from "./Components/SectionTwo/SectionTwo";
 import { SectionFour } from "./Components/SectionFour/SectionFour";
+import { SectionFive } from "./Components/SectionFive/SectionFive";
+import { MobileDevelopSection } from "./Components/MobileDevelopSection/MobileDevelopSection";
+import { SectionThree } from "./Components/SectionThree/SectionThree";
 
 function App() {
   const { lang } = useContext(GlobalContext);
@@ -25,21 +28,23 @@ function App() {
     };
   }, []);
   return (
-  <>
-
+    <>
       <Helmet>
         <title>YourCode</title>
         <meta name="description" content="Helmet application" />
-    </Helmet>
+      </Helmet>
       <div className="">
         <Header />
         <CoursesIcons />
         <BenefitsSection />
-        {/* <OurCoursesSection /> */}
-        <SectionTwo/>
-        <SectionFour/>
+        <SectionFive />
+        <SectionTwo />
+        <SectionThree />
+        {/* <SectionFour /> */}
+        <MobileDevelopSection />
         <AskedQuestionsSection />
-        <QuizSection/>
+        <QuizSection />
+        <OurCoursesSection />
         {/* <ModalForSignIn/> */}
       </div>
     </>

@@ -54,6 +54,11 @@ section {
   font-size: 10px !important;
 }
 
+/* dark background */
+.bg-LightDark {
+  background-color: #26282b;
+}
+
 /* timeline reverse content */
 .MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root {
   text-align: left !important;
