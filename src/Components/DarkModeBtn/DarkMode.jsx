@@ -2,7 +2,7 @@ import React from 'react'
 import './DarkMode.css'
 export const DarkMode = () => {
   return (
-<label class="theme-switch">
+<label className="theme-switch">
   <input type="checkbox" class="theme-switch__checkbox"/>
   <div class="theme-switch__container">
     <div class="theme-switch__clouds"></div>

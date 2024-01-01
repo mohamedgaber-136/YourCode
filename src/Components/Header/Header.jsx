@@ -1,5 +1,6 @@
 import React, { useContext,useEffect } from "react";
 import "./header.css";
+import { TypeAnimation } from 'react-type-animation';
 import { GlobalContext } from "../../Context/GlobalContext";
 import charc from './Leonardo_Diffusion_XL_Frontend_developer_1.jpg'
 import bgImg from './Leonardo_Diffusion_XL_Frontend_developers_2.jpg'
@@ -10,10 +11,12 @@ export const Header = () => {
     AOS.init()
   },[])
   const { trans, checkLang } = useContext(GlobalContext);
+  console.log(2+"2")
+  
   return (
     <>
-      <header className=" flex-md-row d-flex justify-content-center px-lg-5 gap-3 flex-column align-items-center headerParent ">
-        <div className="headerChild">
+      <header className=" flex-md-row d-flex justify-content-center conainet px-lg-5 py-5 gap-3 flex-column align-items-center headerParent ">
+        <div className="headerChild h-50 d-flex flex-column justify-content-center align-items-center">
           <div
             dir={checkLang ? "ltr" : "rtl"}
             className="d-flex justify-content-center flex-column align-items-center gap-1 "
@@ -21,8 +24,17 @@ export const Header = () => {
             <i className="fa-solid fa-bolt  bg-dark p-2 rounded-circle"></i>
             <h2 className="m-0 text-center text-dark">
               <span className="textUnlock">{trans("Header.colored")}</span>{" "}
-              {trans("Header.first")}
-            </h2>
+              <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        trans("Header.first")
+       ,
+        1000 // wait 1s before replacing "Mice" with "Hamsters"
+        
+      ]}
+      wrapper="h2"
+      speed={300}
+    />            </h2>
           </div>
           <h5 className="m-0 text-center text-dark">{trans("Header.second")}</h5>
           <h6 className="m-0 text-center text-dark">{trans("Header.third")} </h6>

@@ -74,11 +74,12 @@ export const InterviewQuestions = () => {
     <>
       <ScrollIndicator />
       <div className="min-vh-100 d-flex align-items-start justify-content-end">
-        <SideBarInterview
+        <SideBarInterview 
+      
           list={quizeList}
           onItemClick={(event) => {
             ref.current
-              .querySelector(`[id='${event.target.id}']`)
+              .getElementsByClassName(`${event.target.id}`)[0]
               .scrollIntoView();
 
             // quizeList.forEach((item) => {
@@ -90,10 +91,7 @@ export const InterviewQuestions = () => {
             // event.target.classList.toggle("bg-danger");
             // console.log(sideBarRef,'hello');
 
-            console.log(
-              ref.current.querySelector(`[id='${event.target.id}']`),
-              "dhsgf"
-            );
+          
           }}
         />
         <div ref={ref} className={`${styles.main} py-4 d-flex flex-column`}>
@@ -103,8 +101,7 @@ export const InterviewQuestions = () => {
               <ul>
                 {item.list.map((quiz, listIndex) => (
                   <div
-                    id={`${titleIndex}-${listIndex}`}
-                    className="vh-100 border p-2 m-2"
+                    className={` ${titleIndex}-${listIndex}  vh-100 border p-2 m-2`}
                   >
                     <>
                       {/* <h2> {`${listIndex + 1}.${quiz}`}</h2> */}

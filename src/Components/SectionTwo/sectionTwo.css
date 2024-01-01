@@ -21,7 +21,9 @@
 }
 
 @media(max-width:768px) {
-
+#child{
+    border-radius: 20px  !important;
+}
     .rightSideContent,
     .LftSideImg {
         width: 100%;
@@ -36,10 +38,10 @@
         bottom: -120px !important;
         z-index: -1;
     }
+    
+}
 .SectionTwoParent{
     overflow: hidden    ;
-}
-
 }
 
 .squareImg {
@@ -63,10 +65,23 @@
 }
 #childtwo{
     border-radius: 20px 20px 0 0;
-
+    
 }
 #child img,#childtwo img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
+}
+.SectionTwoParent ul li {
+    font-size: 20px;
+    list-style:circle;
+}
+.IconsGifParent{
+    height: 100px;
+}
+.IconsGifParent img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
 }

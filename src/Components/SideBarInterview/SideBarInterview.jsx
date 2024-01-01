@@ -9,7 +9,7 @@ export const SideBarInterview = ({ list, onItemClick }) => {
 
   return (
     <div className={`${styles.sideBarFixed}`}>
-      <aside className={`overflow-y-scroll ${styles.sideBarPos} `}>
+      <aside className={` ${styles.sideBarPos} `}>
         {/* <h6 className="text-white p-2 ">{content} Tutorial</h6> */}
         <Accordion
           ref={ref}

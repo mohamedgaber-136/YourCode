@@ -4,7 +4,7 @@ import { Inputs } from "../../Components/Inputs/Inputs";
 import Img from "./Leonardo_Diffusion_XL_software_Thinking_2.jpg";
 import {useNavigate} from 'react-router-dom'
 import {Helmet} from "react-helmet";
-
+import  axios  from "axios";
 export const SignUp = () => {
   let navigator = useNavigate()
 
@@ -16,6 +16,29 @@ export const SignUp = () => {
     { type: "password", span: "password" },
     { type: "password", span: "Confirm Password" },
   ];
+  const UserData = (e)=>{
+e.preventDefault()
+const user = {
+  FirstName:e.target[0].value,
+  LastName:e.target[1].value,
+  Email:e.target[2].value,
+  password:e.target[3].value,
+}
+sendUserData(user)
+  }
+  
+  const sendUserData = async (user)=>{
+    const apiRequest = 'http://localhost:4000/users'
+let request = await axios.post(apiRequest,user,{
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    headers: {
+      "Content-Type": "application/json",
+    },
+ 
+     })
+  }
+  
   return ( 
     <>
     <Helmet>
@@ -29,7 +52,7 @@ export const SignUp = () => {
         </div>
         <form
           className="form "
-         
+         onSubmit={UserData}
         >
           <p className="title">Register </p>
           <p className="message">Signup now and get full access to our app. </p>
@@ -39,7 +62,7 @@ export const SignUp = () => {
             ))}
           </div>
           <label>
-            <input type="email" className="input" />
+            <input type="text" className="input" />
             <span className="text-dark">Email</span>
           </label>
           <div className="flex"></div>
