@@ -4,7 +4,9 @@
 }
 
 .benefitBackground {
-  /* background-color: rebeccapurple; */
   background-image: url(../../../public//images/polygon-scatter-haikei-hexa-outline.svg);
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }

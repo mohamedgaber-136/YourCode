@@ -57,7 +57,7 @@ export const BenefitsSection = () => {
     // Aos.init();
   }, []);
   return (
-    <section dir={checkLang ? "ltr" : "rtl"}>
+    <section dir={checkLang ? "ltr" : "rtl"} className="min-vh-100 ">
       {/* <MultiWaveSvg/> */}
       <div className="benefitBackground">
         <Container className="mainSpacer  d-flex flex-column justify-content-center align-items-center ">

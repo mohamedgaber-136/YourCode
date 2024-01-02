@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import styles from "./SectionFive.module.css";
 import Aos from "aos";
 
@@ -10,7 +9,7 @@ export const SectionFive = () => {
     Aos.init({
       duration: 1000,
       // delay: 3000,
-      once: false,
+      once: true,
     });
 
     observer.observe(waveSvgRef.current);
@@ -93,7 +92,7 @@ export const SectionFive = () => {
           </h3>
           <p
             data-aos="fade-up-left"
-             data-aos-delay="3000"
+            data-aos-delay="3000"
             //  data-aos-once="true"
           >
             Amet veniam sit incididunt consequat laboris tempor velit non ut
@@ -103,7 +102,7 @@ export const SectionFive = () => {
 
           <p
             data-aos="fade-up-left"
-             data-aos-delay="3000" 
+            data-aos-delay="3000"
             // data-aos-once="true"
           >
             Dolor aliquip nisi anim eiusmod nulla dolor proident enim anim enim

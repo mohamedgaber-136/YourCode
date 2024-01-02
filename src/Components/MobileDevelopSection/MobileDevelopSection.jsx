@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import styles from "./MobileDevelopSection.module.css";
 import Aos from "aos";
 
